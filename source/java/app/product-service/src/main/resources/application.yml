@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: product-service
+  datasource:
+    username: root
+    password: password
+    url: jdbc:postgresql://localhost:5432/product_service
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: false
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
+  messages:
+    basename: messages,config.i18n.messages
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka/
+
+server:
+  port: 8085
