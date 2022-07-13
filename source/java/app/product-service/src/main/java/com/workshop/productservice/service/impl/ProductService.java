@@ -1,6 +1,6 @@
 package com.workshop.productservice.service.impl;
 
-import com.workshop.productservice.dto.AllProductDTO;
+import com.workshop.productservice.dto.ProductListDTO;
 import com.workshop.productservice.dto.ProductDTO;
 import com.workshop.productservice.dto.ProductSaveDTO;
 import com.workshop.productservice.entity.Product;
@@ -27,12 +27,12 @@ public class ProductService implements IProductService {
     }
 
     @Override
-    public AllProductDTO findAll() {
+    public ProductListDTO findAll() {
          var r = StreamSupport.stream(productRepository.findAll().spliterator(), false)
                 .map(p -> modelMapper.map(p, ProductDTO.class)).toList();
 
-         AllProductDTO allProductDTO = new AllProductDTO(r);
+         ProductListDTO productListDTO = new ProductListDTO(r);
 
-         return allProductDTO;
+         return productListDTO;
     }
 }

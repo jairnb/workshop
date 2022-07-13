@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.validation.constraints.NotBlank;
 import java.util.UUID;
 
 @AllArgsConstructor
@@ -12,6 +13,10 @@ import java.util.UUID;
 @Getter
 @Setter
 public class StockSaveDTO {
-    private UUID productId;
     private int quantity;
+    @NotBlank(message = "Product Id cannot be empty")
+    private UUID productId;
+    @NotBlank(message = "Company Id cannot be empty")
+    private UUID companyId;
+
 }

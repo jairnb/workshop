@@ -14,8 +14,8 @@ import java.util.UUID;
 @Setter
 public class StockDTO {
     private UUID id;
-    private UUID productId;
     private int quantity;
     private LocalDate date;
-
+    private UUID companyId;
+    private UUID productId;
 }

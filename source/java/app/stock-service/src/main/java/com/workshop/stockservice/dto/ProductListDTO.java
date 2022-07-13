@@ -1,4 +1,4 @@
-package com.workshop.productservice.dto;
+package com.workshop.stockservice.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,6 +11,6 @@ import java.util.List;
 @NoArgsConstructor
 @Getter
 @Setter
-public class AllProductDTO {
+public class ProductListDTO {
     List<ProductDTO> products;
 }

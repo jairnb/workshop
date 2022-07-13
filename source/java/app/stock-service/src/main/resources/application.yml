@@ -7,7 +7,7 @@ spring:
     url: jdbc:postgresql://localhost:5432/stock_service
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
@@ -24,4 +24,4 @@ eureka:
       defaultZone: http://localhost:8081/eureka/
 
 server:
-  port: 8086
+  port: 8087

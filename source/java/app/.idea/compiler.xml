@@ -10,9 +10,11 @@
         <module name="stock-service" />
         <module name="product-service" />
         <module name="discovery-server" />
+        <module name="company-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="company-service" target="17" />
       <module name="dicovery-server" target="17" />
       <module name="discovery-server" target="17" />
       <module name="product-service" target="17" />
@@ -21,6 +23,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="company-service" options="-parameters" />
       <module name="dicovery-server" options="-parameters" />
       <module name="discovery-server" options="-parameters" />
       <module name="product-service" options="-parameters" />

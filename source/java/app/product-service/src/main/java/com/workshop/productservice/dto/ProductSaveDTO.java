@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.validation.constraints.NotBlank;
+import java.util.UUID;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -18,4 +19,6 @@ public class ProductSaveDTO {
     private String code;
     private double purchasePrice;
     private double salePrice;
+//    @NotBlank(message = "Company Id cannot be empty")
+    private UUID companyId;
 }
