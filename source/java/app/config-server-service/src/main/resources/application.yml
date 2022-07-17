@@ -5,7 +5,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/jairnb/workshop/tree/main/source/java/app/workshop-services-configurations
+          uri: https://github.com/jairnb/workshop.git
           skipSslValidation: true
+          search-paths: /source/java/app/workshop-services-configurations
 server:
   port: 8082
