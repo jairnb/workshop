@@ -1,6 +1,6 @@
 spring:
   application:
-    name: discover-service
+    name: discovery-server
 
 server:
   port: 8081
