@@ -15,7 +15,7 @@ public class ProductDTO {
     private UUID id;
     private String name;
     private String code;
-    private double purchasePrice;
+    private double purchasedPrice;
     private double salePrice;
     private UUID companyId;
 

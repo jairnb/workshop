@@ -1,15 +1,18 @@
 spring:
   application:
     name: discover-service
+  config:
+    import: optional:configserver:http://localhost:8082
 
-server:
-  port: 8081
 
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    registerWithEureka: false  #Eureka cannot register itself as a client.
-    fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#server:
+#  port: 8081
+#
+#eureka:
+#  instance:
+#    hostname: localhost
+#  client:
+#    registerWithEureka: false  #Eureka cannot register itself as a client.
+#    fetchRegistry: false
+#    serviceUrl:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

@@ -17,7 +17,7 @@ public class ProductSaveDTO {
     @NotBlank(message = "Name cannot be empty")
     private String name;
     private String code;
-    private double purchasePrice;
+    private double purchasedPrice;
     private double salePrice;
 //    @NotBlank(message = "Company Id cannot be empty")
     private UUID companyId;

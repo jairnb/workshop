@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.reactive.function.client.WebClient;
 
 import javax.validation.Valid;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/products")
@@ -27,13 +28,13 @@ public class ProductController {
 
     @PostMapping
     public ResponseEntity<ProductDTO> save(@Valid @RequestBody ProductSaveDTO p){
-        var company = webClientBuilder.build().post()
-                .uri("http://" + companyServiceName + ":" + companyServicePort + "/companies")
-                .bodyValue(new CompanySaveDTO("Company 1"))
-                .retrieve()
-                .bodyToMono(CompanyDTO.class);
+//        var company = webClientBuilder.build().post()
+//                .uri("http://" + companyServiceName + ":" + companyServicePort + "/companies")
+//                .bodyValue(new CompanySaveDTO("Company 1"))
+//                .retrieve()
+//                .bodyToMono(CompanyDTO.class);
 
-        p.setCompanyId(company.block().getId());
+        p.setCompanyId(UUID.randomUUID());
         var a = productService.save(p);
         return new ResponseEntity<>(a, HttpStatus.CREATED);
     }
