@@ -1,8 +1,6 @@
 spring:
   application:
     name: company-service
-  profiles:
-    active: default
   datasource:
     username: root
     password: password
