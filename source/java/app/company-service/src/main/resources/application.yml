@@ -1,8 +1,23 @@
 spring:
   application:
     name: company-service
+  profiles:
+    active: default,dev
   config:
-    import: optional:configserver:http://localhost:8082
+    import: optional:configserver:http://localhost:8888
+
+
+######################################################################################################
+######## Server Configurations
+#server:
+#  port: 8085
+#
+######### Spring Configurations
+#spring:
+#  application:
+#    name: company-service
+#  profiles:
+#        active: default,dev
 #  datasource:
 #    username: root
 #    password: password
@@ -20,11 +35,20 @@ spring:
 #    init:
 #      mode: always
 #
-####### Eureka
+####### Eureka Configurations
 #eureka:
 #  client:
 #    serviceUrl:
 #      defaultZone: http://localhost:8081/eureka/
-#
-#server:
-#  port: 8085
+
+
+######## Cloud Configurations
+#cloud:
+#  aws:
+#    region:
+#      static: us-east-1
+#    stack:
+#      auto: false
+#    credentials:
+#      accessKey: ${AWSAccessKeyId}
+#      secretKey: ${AWSSecretKey}

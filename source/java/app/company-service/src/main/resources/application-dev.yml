@@ -2,4 +2,5 @@ spring:
   application:
     name: company-service-dev
   config:
-    import: optional:configserver:http://localhost:8082
+    import: optional:configserver:http://localhost:8888
+

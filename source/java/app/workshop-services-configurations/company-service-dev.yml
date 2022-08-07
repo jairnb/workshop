@@ -1,6 +1,6 @@
 spring:
   application:
-    name: company-service
+    name: company-service-dev
   datasource:
     username: root
     password: password

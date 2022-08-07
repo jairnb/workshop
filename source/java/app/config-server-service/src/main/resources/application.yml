@@ -8,6 +8,11 @@ spring:
           uri: https://github.com/jairnb/workshop.git
           skipSslValidation: true
           search-paths: /source/java/app/workshop-services-configurations
+          repos:
+            local:
+#              pattern: local*
+              uri: ${user.home}/jair/Documents/dev/projetos/workshop
+              search-paths: /source/java/app/workshop-services-configurations
 
 eureka:
   client:
@@ -15,4 +20,4 @@ eureka:
       defaultZone: http://localhost:8081/eureka/
 
 server:
-  port: 8082
+  port: 8888

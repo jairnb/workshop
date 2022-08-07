@@ -5,6 +5,7 @@ import com.workshop.company.dto.CompanyListDTO;
 import com.workshop.company.dto.CompanySaveDTO;
 import com.workshop.company.service.ICompanyService;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +19,9 @@ import java.util.UUID;
 public class CompanyController {
     private final ICompanyService companyService;
 
+    @Value("${cloud.aws.credentials.accessKey}")
+    private static String ab;
+
     @PostMapping
     public ResponseEntity<CompanyDTO> save(@Valid @RequestBody CompanySaveDTO c){
         var r = companyService.save(c);
@@ -26,6 +30,7 @@ public class CompanyController {
 
     @GetMapping
     public ResponseEntity<CompanyListDTO> findAll(){
+        System.out.println(ab);
         return new ResponseEntity<>(companyService.findAll(), HttpStatus.OK);
     }
 
