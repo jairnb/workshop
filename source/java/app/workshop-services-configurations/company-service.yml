@@ -31,12 +31,12 @@ eureka:
 
 
 ######## Cloud Configurations
-cloud:
-  aws:
-    region:
-      static: us-east-1
-    stack:
-      auto: false
-    credentials:
-      accessKey: ${AWSAccessKeyId}
-      secretKey: ${AWSSecretKey}
+#cloud:
+#  aws:
+#    region:
+#      static: us-east-1
+#    stack:
+#      auto: false
+#    credentials:
+#      accessKey: ${AWSAccessKeyId}
+#      secretKey: ${AWSSecretKey}

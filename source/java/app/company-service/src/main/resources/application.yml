@@ -1,8 +1,8 @@
 spring:
   application:
     name: company-service
-  profiles:
-    active: default,dev
+#  profiles:
+#    active: default,dev
   config:
     import: optional:configserver:http://localhost:8888
 
@@ -42,13 +42,13 @@ spring:
 #      defaultZone: http://localhost:8081/eureka/
 
 
-######## Cloud Configurations
-#cloud:
-#  aws:
-#    region:
-#      static: us-east-1
-#    stack:
-#      auto: false
-#    credentials:
-#      accessKey: ${AWSAccessKeyId}
-#      secretKey: ${AWSSecretKey}
+####### Cloud Configurations
+cloud:
+  aws:
+    region:
+      static: us-east-1
+    stack:
+      auto: false
+    credentials:
+      accessKey: ${AWSAccessKeyId}
+      secretKey: ${AWSSecretKey}
