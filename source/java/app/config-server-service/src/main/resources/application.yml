@@ -19,5 +19,12 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8081/eureka/
 
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include:*
+
 server:
   port: 8888

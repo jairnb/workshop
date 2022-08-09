@@ -18,7 +18,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @Builder
 @Entity
-public class Image {
+public class File {
     @Id
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator", parameters = {@Parameter(name = "uuid_gen_strategy_class", value = "org.hibernate.id.uuid.CustomVersionOneStrategy")})
@@ -26,7 +26,7 @@ public class Image {
     private UUID id;
     private String title;
     private String description;
-    private String imagePath;
-    private String imageFileName;
+    private String filePath;
+    private String fileName;
 }
 

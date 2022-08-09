@@ -1,11 +1,10 @@
-package com.workshop.company.service.impl;
+package com.workshop.company.service;
 
 import com.workshop.company.dto.CompanyDTO;
 import com.workshop.company.dto.CompanyListDTO;
 import com.workshop.company.dto.CompanySaveDTO;
 import com.workshop.company.entity.Company;
 import com.workshop.company.repository.ICompanyRepository;
-import com.workshop.company.service.ICompanyService;
 import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;

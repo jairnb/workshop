@@ -1,43 +1,56 @@
-spring:
-  application:
-    name: company-service
-  config:
-    import: optional:configserver:http://localhost:8888
+#spring:
+#  application:
+#    name: company-service
+#  config:
+#    import: optional:configserver:http://localhost:8888
 
 
 ######################################################################################################
 ######## Server Configurations
-#server:
-#  port: 8085
-#
-######### Spring Configurations
-#spring:
-#  application:
-#    name: company-service
-#  profiles:
-#        active: default,dev
-#  datasource:
-#    username: root
-#    password: password
-#    url: jdbc:postgresql://localhost:5432/company_service
-#  jpa:
-#    hibernate:
-#      ddl-auto: create
-#    properties:
-#      hibernate:
-#        dialect: org.hibernate.dialect.PostgreSQLDialect
-#        format_sql: true
-#    show-sql: false
-#    defer-datasource-initialization: true
-#  sql:
-#    init:
-#      mode: always
-#
-####### Eureka Configurations
-#eureka:
-#  client:
-#    serviceUrl:
-#      defaultZone: http://localhost:8081/eureka/
+server:
+  port: 8085
+
+######## Spring Configurations
+spring:
+  application:
+    name: company-service
+  profiles:
+        active: default,dev
+  datasource:
+    username: root
+    password: password
+    url: jdbc:postgresql://localhost:5432/company_service
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: false
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
+
+###### Eureka Configurations
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka/
 
 
 
+####### Cloud Configurations
+cloud:
+  aws:
+    region:
+      static: us-east-1
+    stack:
+      auto: false
+    credentials:
+      accessKey: ${AWSAccessKeyId}
+      secretKey: ${AWSSecretKey}
+
+aws:
+  bucket: workshop-app-bucket
