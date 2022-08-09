@@ -4,3 +4,13 @@ spring:
   config:
     import: optional:configserver:http://localhost:8888
 
+####### Cloud Configurations
+cloud:
+  aws:
+    region:
+      static: us-east-1
+    stack:
+      auto: false
+    credentials:
+      accessKey: ${AWSAccessKeyId}
+      secretKey: ${AWSSecretKey}

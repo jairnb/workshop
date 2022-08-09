@@ -6,6 +6,8 @@ server:
 spring:
   application:
     name: company-service
+  profiles:
+    active: de,default
   datasource:
     username: root
     password: password
@@ -30,13 +32,3 @@ eureka:
       defaultZone: http://localhost:8081/eureka/
 
 
-######## Cloud Configurations
-#cloud:
-#  aws:
-#    region:
-#      static: us-east-1
-#    stack:
-#      auto: false
-#    credentials:
-#      accessKey: ${AWSAccessKeyId}
-#      secretKey: ${AWSSecretKey}
