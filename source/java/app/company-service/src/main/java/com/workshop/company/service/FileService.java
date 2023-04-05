@@ -7,19 +7,19 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.transaction.Transactional;
+import jakarta.transaction.Transactional;
 import java.io.IOException;
 import java.util.*;
 
 import static org.apache.http.entity.ContentType.*;
 
-@Service
-@Transactional
+//@Service
+//@Transactional
 public class FileService implements IFileService {
     private IFileRepository fileRepository;
     private IFileStore fileStore;
 
-    @Value("${aws.bucket}")
+//    @Value("${aws.bucket}")
     private String bucketName;
 
     public FileService(IFileRepository fileRepository, IFileStore fileStore) {

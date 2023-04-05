@@ -13,7 +13,7 @@ import java.io.InputStream;
 import java.util.Map;
 import java.util.Optional;
 
-@Component
+//@Component
 public class FileStore implements IFileStore{
     private final AmazonS3 amazonS3;
 
