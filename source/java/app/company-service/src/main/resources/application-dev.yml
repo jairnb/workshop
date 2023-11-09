@@ -1,6 +1,26 @@
 spring:
   application:
-    name: company-service-dev
-  config:
-    import: optional:configserver:http://localhost:8888
+    name: company-service
+  datasource:
+    username: root
+    password: password
+    url: jdbc:postgresql://localhost:5432/company_service
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: false
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: never
 
+eureka:
+  client:
+    enabled: false
+
+server:
+  port: 8085

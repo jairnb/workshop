@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: config-server-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jairnb/workshop.git
+          skipSslValidation: true
+          search-paths: /source/java/app/workshop-services-configurations
+          repos:
+            local:
+#              pattern: local*
+              uri: ${user.home}/jair/Documents/dev/projetos/workshop
+              search-paths: /source/java/app/workshop-services-configurations
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8082/eureka/
+
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include:*
+
+server:
+  port: 8888

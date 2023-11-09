@@ -1,8 +1,11 @@
 spring:
   application:
     name: company-service
+  profiles:
+    active: dev
   config:
     import: optional:configserver:http://localhost:8888
+
 #https://github.com/jairnb/workshop/tree/main/source/java/app/workshop-services-configurations
 
 ######
