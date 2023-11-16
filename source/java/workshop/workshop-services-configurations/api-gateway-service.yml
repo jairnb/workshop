@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: api-gateway-service
+
+
+server:
+  port: 8081
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8082/eureka/

@@ -1,13 +1,14 @@
+server:
+  port: 8888
+
 spring:
   application:
     name: config-server-service
-  profiles:
-    active: default
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/jairnb/workshop.git
+          uri: ${user.home}/Documents/dev/workshop
           skipSslValidation: true
           search-paths: /source/java/workshop/workshop-services-configurations
 
@@ -21,11 +22,7 @@ eureka:
 #  endpoints:
 #    web:
 #      exposure:
-#        include:*
+#        include: "*"
 
-server:
-  port: 8888
 
-logging:
-  level:
-    root: info
+
