@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: employee-service
+  config:
+    import: optional:configserver:http://localhost:8888
+
+
+#eureka:
+#  instance:
+#    hostname: localhost
+#  client:
+#    registerWithEureka: false  #Eureka cannot register itself as a client.
+#    fetchRegistry: false
+#    serviceUrl:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

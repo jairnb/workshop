@@ -8,21 +8,22 @@ spring:
     config:
       server:
         git:
-          uri: ${user.home}/Documents/dev/workshop
+          uri: file://${user.home}/Documents/dev/workshop
           skipSslValidation: true
           search-paths: /source/java/workshop/workshop-services-configurations
 
 eureka:
   client:
-    enabled: false
+    enabled: true
     serviceUrl:
       defaultZone: http://localhost:8082/eureka/
 
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        include: "*"
+management:
+  endpoint:
+    features:
+      enabled: true
+
+
 
 
 
