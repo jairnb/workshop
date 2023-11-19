@@ -6,8 +6,6 @@ server:
 spring:
   application:
     name: employee-service
-  profiles:
-    active: default
 
 ###### Eureka Configurations
 eureka:
