@@ -2,8 +2,13 @@ spring:
   application:
     name: employee-service
   config:
-    import: optional:configserver:http://localhost:8888
+    import: optional:configserver:${CONFIG_SERVER_URL:http://localhost:8888}
 
+eureka:
+  client:
+    enabled: false
+    serviceUrl:
+      defaultZone: http://localhost:8082/eureka/
 
 #eureka:
 #  instance:
