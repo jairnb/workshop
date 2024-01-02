@@ -12,18 +12,6 @@ spring:
     username: root
     password: password
     url: jdbc:postgresql://localhost:5432/company_service
-  jpa:
-    hibernate:
-      ddl-auto: create
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-        format_sql: true
-    show-sql: false
-    defer-datasource-initialization: true
-  sql:
-    init:
-      mode: always
 
 ###### Eureka Configurations
 eureka:
@@ -32,12 +20,12 @@ eureka:
       defaultZone: http://localhost:8082/eureka/
 
 ####### Cloud Configurations
-cloud:
-  aws:
-    region:
-      static: us-east-1
-    stack:
-      auto: false
-    credentials:
-      accessKey: ${AWSAccessKeyId}
-      secretKey: ${AWSSecretKey}
+#cloud:
+#  aws:
+#    region:
+#      static: us-east-1
+#    stack:
+#      auto: false
+#    credentials:
+#      accessKey: ${AWSAccessKeyId}
+#      secretKey: ${AWSSecretKey}

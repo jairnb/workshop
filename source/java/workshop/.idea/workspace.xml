@@ -5,10 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="intellij error">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/employee-service.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/CompanyServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/src/main/resources/application-local.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/src/main/resources/db/migration/V1__Init_schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/src/test/java/org/workshop/companyservice/CompanyServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/entity/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/repository/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/service/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/service/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/resources/db/migration/V1__Init_schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway-service/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-server-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/config-server-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server-service/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server-service/src/main/resources/application-local.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-server-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/discovery-server-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/EmployeeServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/EmployeeServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/resources/application-local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/test/java/com/workshop/employeeservice/EmployeeServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/test/java/com/workshop/employeeservice/EmployeeServiceImplApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workshop-services-configurations/company-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/workshop-services-configurations/company-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workshop-services-configurations/employee-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/workshop-services-configurations/employee-service.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +49,9 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/api-gateway-service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/company-service">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/config-server-service">
@@ -62,6 +97,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.Build config-server-service.executor": "Run",
+    "Gradle.Build discovery-server-service.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -69,6 +106,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ConfigServerServiceApplication.executor": "Debug",
+    "Spring Boot.DiscoveryServerServiceApplication.executor": "Debug",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
@@ -97,6 +136,13 @@
     <configuration name="ApiGatewayServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-gateway-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.workshop.apigatewayservice.ApiGatewayServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompanyServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="company-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.workshop.companyservice.CompanyServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

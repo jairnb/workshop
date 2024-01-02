@@ -1,6 +1,6 @@
 ######## Server Configurations
 server:
-  port: 8085
+  port: 8086
 
 ######## Spring Configurations
 spring:

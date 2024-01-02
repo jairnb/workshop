@@ -1,6 +1,6 @@
 spring:
   application:
-    name: employee-service
+    name: company-service
   cloud:
     config:
       enabled: false
@@ -9,8 +9,8 @@ spring:
   datasource:
     username: root
     password: password
-    url: jdbc:postgresql://localhost:5432/employee_service
-#    driver: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/company_service
+
 eureka:
   client:
     enabled: false
@@ -18,4 +18,4 @@ eureka:
       defaultZone: ${EUREKA_URL:http://localhost:8082/eureka/}
 
 server:
-  port: 8086
+  port: 8085

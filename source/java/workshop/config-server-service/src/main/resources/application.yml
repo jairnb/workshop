@@ -2,7 +2,7 @@ spring:
   application:
     name: config-server-service
   profiles:
-    active: default
+    active: local
   cloud:
     config:
       server:
