@@ -11,13 +11,13 @@ spring:
   datasource:
     username: root
     password: password
-    url: jdbc:postgresql://localhost:5432/company_service
+    url:  ${DATABASE_URL_COMPANY_SERVICE:jdbc:postgresql://localhost:5432/company_service}
 
 ###### Eureka Configurations
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8082/eureka/
+      defaultZone: ${EUREKA_URL:http://localhost:8082/eureka/}
 
 ####### Cloud Configurations
 #cloud:

@@ -9,7 +9,8 @@ spring:
   datasource:
     username: root
     password: password
-    url: jdbc:postgresql://localhost:5432/company_service
+    url: ${DATABASE_URL_COMPANY_SERVICE:jdbc:postgresql://localhost:5432/company_service}
+
 
 eureka:
   client:
