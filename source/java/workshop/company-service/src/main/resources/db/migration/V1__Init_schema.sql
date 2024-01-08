@@ -5,24 +5,26 @@ create table if not exists company
     phone_number bigint,
     name         text not null,
     created_at   timestamp,
-    updated_at   timestamp
+    updated_at   timestamp,
+    version      int
 );
 
 
 create table if not exists address
 (
-    id               serial primary key,
-    company_id       uuid references company (id),
-    street_address   text,
-    street_address_2 text,
-    street_address_3 text,
-    city             text,
-    state            text,
-    zip              text,
-    country          text,
-    county           text,
-    latitude         decimal,
-    longitude        decimal,
-    created_at       timestamp,
-    updated_at       timestamp
+--     id              uuid primary key DEFAULT gen_random_uuid(),
+    company         uuid references company(id),
+    street_address  text,
+    street_address2 text,
+    street_address3 text,
+    city            text,
+    state           text,
+    zip             text,
+    country         text,
+    county          text,
+    latitude        decimal,
+    longitude       decimal,
+    created_at      timestamp,
+    updated_at      timestamp,
+    version         int
 );

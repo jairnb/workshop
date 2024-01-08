@@ -11,12 +11,16 @@ spring:
     password: password
     url: ${DATABASE_URL_COMPANY_SERVICE:jdbc:postgresql://localhost:5432/company_service}
 
-
 eureka:
   client:
     enabled: false
     serviceUrl:
       defaultZone: ${EUREKA_URL:http://localhost:8082/eureka/}
 
+logging:
+  level:
+    org:
+      springframework:
+        jdbc: DEBUG
 server:
   port: 8085
