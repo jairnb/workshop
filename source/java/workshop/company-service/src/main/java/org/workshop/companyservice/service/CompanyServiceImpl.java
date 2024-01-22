@@ -4,6 +4,8 @@ import org.springframework.stereotype.Service;
 import org.workshop.companyservice.entity.Company;
 import org.workshop.companyservice.repository.CompanyRepository;
 
+import java.util.List;
+
 @Service
 public class CompanyServiceImpl implements CompanyService {
     private final CompanyRepository companyRepository;
@@ -18,7 +20,7 @@ public class CompanyServiceImpl implements CompanyService {
     }
 
     @Override
-    public Iterable<Company> findAll() {
+    public List<Company> findAll() {
         return companyRepository.findAll();
     }
 }

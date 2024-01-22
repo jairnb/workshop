@@ -18,6 +18,7 @@ public class Company {
     @Id
     private UUID id;
     private String name;
+    private String companyIdentifier;
     private long phoneNumber;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;

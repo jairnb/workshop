@@ -1,19 +1,21 @@
-create table if not exists company
+create schema if not exists fernandes;
+
+create table if not exists fernandes.company
 (
-    id           uuid primary key DEFAULT gen_random_uuid(),
-    company_id   text,
-    phone_number bigint,
-    name         text not null,
-    created_at   timestamp,
-    updated_at   timestamp,
-    version      int
+    id                 uuid primary key DEFAULT gen_random_uuid(), --serial primary key, --,
+    company_identifier text,
+    phone_number       bigint,
+    name               text not null,
+    created_at         timestamp,
+    updated_at         timestamp,
+    version            int
 );
 
 
-create table if not exists address
+create table if not exists fernandes.address
 (
---     id              uuid primary key DEFAULT gen_random_uuid(),
-    company         uuid references company(id),
+    id              uuid primary key DEFAULT gen_random_uuid(),
+    company         uuid,
     street_address  text,
     street_address2 text,
     street_address3 text,
@@ -26,5 +28,5 @@ create table if not exists address
     longitude       decimal,
     created_at      timestamp,
     updated_at      timestamp,
-    version         int
+    FOREIGN KEY (company) references company (id)
 );
