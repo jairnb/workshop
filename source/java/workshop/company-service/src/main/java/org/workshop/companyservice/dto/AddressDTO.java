@@ -1,20 +1,15 @@
-package org.workshop.companyservice.entity;
+package org.workshop.companyservice.dto;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
+import lombok.Setter;
 
-import java.time.LocalDateTime;
-import java.util.UUID;
-
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Address {
-    @Id
-    private UUID id;
-//    AggregateReference<Company, UUID> company;
+@Getter
+@Setter
+public class AddressDTO {
     private String streetAddress;
     private String streetAddress2;
     private String streetAddress3;
@@ -25,7 +20,4 @@ public class Address {
     private String county;
     private long latitude;
     private long longitude;
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
-    private LocalDateTime deletedAt;
 }

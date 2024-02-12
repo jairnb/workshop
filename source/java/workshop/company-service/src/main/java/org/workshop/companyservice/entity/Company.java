@@ -22,6 +22,7 @@ public class Company {
     private long phoneNumber;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
+    private LocalDateTime deletedAt;
 
     @MappedCollection(idColumn = "company")
     private Set<Address> address;

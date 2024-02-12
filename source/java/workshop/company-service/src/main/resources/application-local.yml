@@ -11,8 +11,10 @@ spring:
     password: password
     url: ${DATABASE_URL_COMPANY_SERVICE:jdbc:postgresql://localhost:5432/company_service}
   flyway:
-    enabled: false
-
+    enabled: true
+#  mvc:
+#    problemdetails:
+#      enabled: true
 eureka:
   client:
     enabled: false

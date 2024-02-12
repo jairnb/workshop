@@ -1,10 +1,14 @@
 package org.workshop.companyservice.service;
 
-import org.workshop.companyservice.entity.Company;
+import org.workshop.companyservice.dto.CompanyDTO;
+import org.workshop.companyservice.dto.CompanyListDTO;
 
-import java.util.List;
+import java.util.UUID;
 
 public interface CompanyService {
-    Company save(Company company);
-    List<Company> findAll();
+    CompanyDTO save(CompanyDTO company);
+    CompanyDTO findById(UUID uuid);
+    CompanyListDTO findAll();
+    CompanyDTO update(UUID id, CompanyDTO company) throws Exception;
+    void delete(UUID uuid) throws Exception;
 }

@@ -30,8 +30,7 @@ public class CompanyService implements ICompanyService {
     @Override
     public CompanyDTO findById(UUID uuid) {
         var company = companyRepository.findById(uuid);
-        if(company.isPresent()) return modelMapper.map(company.get(), CompanyDTO.class);
-        return null;
+        return company.map(value -> modelMapper.map(value, CompanyDTO.class)).orElse(null);
     }
 
     @Override
