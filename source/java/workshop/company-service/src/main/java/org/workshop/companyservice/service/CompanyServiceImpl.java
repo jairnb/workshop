@@ -2,8 +2,10 @@ package org.workshop.companyservice.service;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
+import org.workshop.companyservice.dto.AddressDTO;
 import org.workshop.companyservice.dto.CompanyDTO;
 import org.workshop.companyservice.dto.CompanyListDTO;
+import org.workshop.companyservice.entity.Address;
 import org.workshop.companyservice.entity.Company;
 import org.workshop.companyservice.repository.CompanyRepository;
 
@@ -54,16 +56,41 @@ public class CompanyServiceImpl implements CompanyService {
     public CompanyDTO update(UUID uuid, CompanyDTO companyDTO) throws Exception {
         Optional<Company> companyOptional = companyRepository.findById(uuid);
 
+        //TODO: Review thr exception
         if (companyOptional.isEmpty()) throw new Exception();
         Company company = companyOptional.get();
         company.setName(companyDTO.getName());
-        return null;
+        company.setCompanyIdentifier(companyDTO.getCompanyIdentifier());
+        company.setPhoneNumber(companyDTO.getPhoneNumber());
+        company.setUpdatedAt(LocalDateTime.now());
+
+        for (Address address : company.getAddress()) {
+            Optional<AddressDTO> addressDTO = companyDTO.getAddress().stream().filter(c -> c.getId().equals(address.getId())).findFirst();
+
+            addressDTO.ifPresent(dto -> {
+                address.setStreetAddress(dto.getStreetAddress());
+                address.setStreetAddress2(dto.getStreetAddress2());
+                address.setStreetAddress3(dto.getStreetAddress3());
+                address.setCity(dto.getCity());
+                address.setState(dto.getState());
+                address.setZip(dto.getZip());
+                address.setCountry(dto.getCountry());
+                address.setCounty(dto.getCounty());
+                address.setLatitude(dto.getLatitude());
+                address.setLongitude(dto.getLongitude());
+                address.setUpdatedAt(LocalDateTime.now());
+            });
+        }
+        Company result = companyRepository.save(company);
+
+        return modelMapper.map(result, CompanyDTO.class);
     }
 
     @Override
     public void delete(UUID uuid) throws Exception {
         Optional<Company> companyOptional = companyRepository.findById(uuid);
 
+        //TODO: Review thr exception
         if (companyOptional.isEmpty()) throw new Exception();
         companyOptional.get().setDeletedAt(LocalDateTime.now());
         companyRepository.save(companyOptional.get());

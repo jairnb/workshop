@@ -5,11 +5,14 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.UUID;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 public class AddressDTO {
+    private UUID id;
     private String streetAddress;
     private String streetAddress2;
     private String streetAddress3;

@@ -44,9 +44,10 @@ public class CompanyController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<?> update(@PathVariable UUID id, @Valid @RequestBody CompanyDTO companyDTO) {
+    public ResponseEntity<?> update(@PathVariable UUID id, @Valid @RequestBody CompanyDTO companyDTO) throws Exception {
+        CompanyDTO companyDTOResponse = companyService.update(id, companyDTO);
+        return (companyDTOResponse != null) ? new ResponseEntity<>(companyDTOResponse, HttpStatus.OK) : new ResponseEntity<>(HttpStatus.NOT_FOUND);
 
-        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")
