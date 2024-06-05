@@ -1,6 +1,8 @@
 package org.workshop.companyservice.controller;
 
 import jakarta.validation.Valid;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -21,6 +23,7 @@ import java.util.UUID;
 @RequestMapping("/api/v1/company")
 public class CompanyController {
     private final CompanyService companyService;
+    private final Logger logger = LoggerFactory.getLogger(CompanyController.class);
 
     public CompanyController(CompanyService companyService) {
         this.companyService = companyService;
@@ -33,6 +36,7 @@ public class CompanyController {
 
     @GetMapping
     public ResponseEntity<CompanyListDTO> findAll() {
+        logger.info("Enter CompanyController::findAll");
         CompanyListDTO all = companyService.findAll();
         return new ResponseEntity<>(all, HttpStatus.OK);
     }

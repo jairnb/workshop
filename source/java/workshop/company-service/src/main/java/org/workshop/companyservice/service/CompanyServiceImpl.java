@@ -1,6 +1,8 @@
 package org.workshop.companyservice.service;
 
 import org.modelmapper.ModelMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.workshop.companyservice.dto.AddressDTO;
 import org.workshop.companyservice.dto.CompanyDTO;
@@ -18,6 +20,7 @@ import java.util.UUID;
 public class CompanyServiceImpl implements CompanyService {
     private final CompanyRepository companyRepository;
     private final ModelMapper modelMapper;
+    private final Logger logger = LoggerFactory.getLogger(CompanyServiceImpl.class);
 
     public CompanyServiceImpl(CompanyRepository companyRepository, ModelMapper modelMapper) {
         this.companyRepository = companyRepository;
@@ -48,6 +51,7 @@ public class CompanyServiceImpl implements CompanyService {
 
     @Override
     public CompanyListDTO findAll() {
+        logger.info("Enter CompanyServiceImpl::findAll");
         List<CompanyDTO> companyDTOList = companyRepository.findAll().stream().map(company -> modelMapper.map(company, CompanyDTO.class)).toList();
         return new CompanyListDTO(companyDTOList);
     }

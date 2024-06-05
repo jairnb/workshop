@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="company-service controller and service updated">
+      <change afterPath="$PROJECT_DIR$/company-service/todo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/controller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/controller/CompanyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/dto/AddressDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/dto/AddressDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/service/CompanyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/service/CompanyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/resources/application-local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/resources/logback-spring.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +220,18 @@
       <workItem from="1707271968392" duration="1159000" />
       <workItem from="1707358532344" duration="899000" />
       <workItem from="1707669022956" duration="16099000" />
-      <workItem from="1707790774137" duration="2363000" />
+      <workItem from="1707790774137" duration="2654000" />
+      <workItem from="1708218128679" duration="3249000" />
+      <workItem from="1708297319475" duration="4372000" />
+      <workItem from="1708398998820" duration="4000" />
+      <workItem from="1709248749292" duration="591000" />
+      <workItem from="1712624516092" duration="681000" />
+      <workItem from="1715042411050" duration="703000" />
+      <workItem from="1715133428099" duration="1523000" />
+      <workItem from="1715217262189" duration="1200000" />
+      <workItem from="1717176183253" duration="1195000" />
+      <workItem from="1717427397811" duration="1276000" />
+      <workItem from="1717543545663" duration="1742000" />
     </task>
     <task id="LOCAL-00001" summary="intellij error">
       <option name="closed" value="true" />
@@ -259,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707705424285</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="company-service controller and service updated">
+      <option name="closed" value="true" />
+      <created>1707793746256</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707793746256</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +320,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/service/CompanyServiceImpl.java</url>
-          <line>69</line>
+          <line>73</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
