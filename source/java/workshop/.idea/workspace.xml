@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="company-service controller and service updated">
-      <change afterPath="$PROJECT_DIR$/company-service/todo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="logs initial sept-up">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/controller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/controller/CompanyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/service/CompanyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/service/CompanyServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/company-service/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/resources/application-local.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/resources/logback-spring.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,6 +227,11 @@
       <workItem from="1717176183253" duration="1195000" />
       <workItem from="1717427397811" duration="1276000" />
       <workItem from="1717543545663" duration="1742000" />
+      <workItem from="1717545612340" duration="237000" />
+      <workItem from="1717545951508" duration="114000" />
+      <workItem from="1717546577011" duration="1547000" />
+      <workItem from="1718147912507" duration="1759000" />
+      <workItem from="1718762005232" duration="787000" />
     </task>
     <task id="LOCAL-00001" summary="intellij error">
       <option name="closed" value="true" />
@@ -281,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707793746256</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="logs initial sept-up">
+      <option name="closed" value="true" />
+      <created>1717545778010</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717545778010</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +301,8 @@
     <MESSAGE value="company-service initial database integration" />
     <MESSAGE value="company-service datasource updates" />
     <MESSAGE value="company-service controller and service updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="company-service controller and service updated" />
+    <MESSAGE value="logs initial sept-up" />
+    <option name="LAST_COMMIT_MESSAGE" value="logs initial sept-up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

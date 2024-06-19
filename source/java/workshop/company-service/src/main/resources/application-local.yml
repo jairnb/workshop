@@ -26,6 +26,7 @@ logging:
     org:
       springframework:
         web: debug
+  config: classpath:logback-spring.xml
 
 server:
   port: 8085
