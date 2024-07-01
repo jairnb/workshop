@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="logs initial sept-up">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/resources/application-local.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +230,8 @@
       <workItem from="1717545951508" duration="114000" />
       <workItem from="1717546577011" duration="1547000" />
       <workItem from="1718147912507" duration="1759000" />
-      <workItem from="1718762005232" duration="787000" />
+      <workItem from="1718762005232" duration="1560000" />
+      <workItem from="1719008078018" duration="288000" />
     </task>
     <task id="LOCAL-00001" summary="intellij error">
       <option name="closed" value="true" />

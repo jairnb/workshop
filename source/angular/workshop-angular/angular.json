@@ -24,12 +24,24 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/assets"
             ],
             "styles": [
+              "src/assets/fonts/feather.css",
+              "src/assets/fonts/fontawesome.css",
+              "src/assets/fonts/material.css",
+              "src/assets/css/style.css",
+              "src/assets/css/customizer.css",
+              "src/assets/css/layout-horizontal.css",
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/assets/js/vendor-all.min.js",
+              "src/assets/js/plugins/bootstrap.min.js",
+              "src/assets/js/plugins/feather.min.js",
+              "src/assets/js/pcoded.min.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
