@@ -1,0 +1,12 @@
+
+              "src/assets/js/vendor-all.min.js",
+              "src/assets/js/plugins/bootstrap.min.js",
+              "src/assets/js/plugins/feather.min.js",
+              "src/assets/js/pcoded.min.js"
+
+ng generate class company/shared/Company --type=model
+ng generate component company
+
+
+
+
