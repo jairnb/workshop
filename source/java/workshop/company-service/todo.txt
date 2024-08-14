@@ -1,7 +1,8 @@
 
 
-1  - Logging
+1  - Logging / metrics (Prometheus)  / visualization (Grafana)
     - logback
+
 2 - Tracing
     - Observability
 3 - Testing

@@ -5,7 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="logs initial sept-up">
+      <change afterPath="$PROJECT_DIR$/company-service/src/test/java/org/workshop/companyservice/controller/CompanyControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/workshop-angular/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/workshop-angular/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/workshop-angular/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/company/company.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/company/company.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/company/company.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/company/company.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/company/shared/company.model.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/company/shared/company.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/01145161-4f85-42c3-944a-153b40217810.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/01145161-4f85-42c3-944a-153b40217810.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/company-service.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/company-service.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/todo.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,12 +63,25 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jairnb&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jairnb/workshop.git&quot;,
+    &quot;accountId&quot;: &quot;d3b61dd1-74c4-4888-a125-291ddc8aad97&quot;
+  }
+}</component>
   <component name="KotlinCodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
@@ -76,6 +106,7 @@
     &quot;Gradle.Build company-service.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Build config-server-service.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Build discovery-server-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyControllerTest.findAll.executor&quot;: &quot;Debug&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -87,6 +118,8 @@
     &quot;Spring Boot.ConfigServerServiceApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.DiscoveryServerServiceApplication.executor&quot;: &quot;Debug&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
@@ -118,6 +151,12 @@
       <recent name="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/config/database" />
       <recent name="$PROJECT_DIR$/company-service/src/main/resources" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.workshop.companyservice.controller" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.workshop.companyservice.dto" />
     </key>
@@ -132,6 +171,30 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.CompanyServiceApplication">
+    <configuration name="CompanyControllerTest.findAll" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/company-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.workshop.companyservice.controller.CompanyControllerTest.findAll&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="ApiGatewayServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-gateway-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.workshop.apigatewayservice.ApiGatewayServiceApplication" />
@@ -175,6 +238,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CompanyControllerTest.findAll" />
         <item itemvalue="Spring Boot.DiscoveryServerServiceApplication" />
       </list>
     </recent_temporary>
@@ -182,7 +246,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-76dd8dae" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
       </set>
     </attachedChunks>
   </component>
@@ -232,6 +297,14 @@
       <workItem from="1718147912507" duration="1759000" />
       <workItem from="1718762005232" duration="1560000" />
       <workItem from="1719008078018" duration="288000" />
+      <workItem from="1719884963952" duration="1193000" />
+      <workItem from="1721582242555" duration="2184000" />
+      <workItem from="1722878387800" duration="4699000" />
+      <workItem from="1723087798987" duration="1210000" />
+      <workItem from="1723134903875" duration="737000" />
+      <workItem from="1723135830186" duration="3079000" />
+      <workItem from="1723219301890" duration="2090000" />
+      <workItem from="1723401026011" duration="4744000" />
     </task>
     <task id="LOCAL-00001" summary="intellij error">
       <option name="closed" value="true" />
