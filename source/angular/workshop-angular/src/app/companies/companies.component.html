@@ -1,6 +1,44 @@
 <p>companies works!</p>
 
 
-<div *ngFor="let item of companies.companies">
-    <p>{{item.name}}</p>
+<div *ngIf="companies$ | async as companies" >
+    <!-- <div *ngFor="let item of companies.companies">
+        <p>{{item.name}}</p>
+    </div> -->
+
+    <div class="dt-responsive table-responsive">
+        <table id="simpletable" class="table table-striped table-bordered nowrap">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Identifier</th>
+                    <!-- <th>Id</th> -->
+                    <th>Phone Number</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let item of companies.companies">
+                <tr>
+                    <td>{{item.name}}</td>
+                    <td>{{item.companyIdentifier}}</td>
+                    <!-- <td>{{item.id}}</td> -->
+                    <td>{{item.phoneNumber}}</td>
+                </tr>
+                
+    
+            </tbody>
+            <!-- <tfoot>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Age</th>
+                    <th>Start date</th>
+                    <th>Salary</th>
+                </tr>
+            </tfoot> -->
+        </table>
+    </div>
 </div>
+
+
+
