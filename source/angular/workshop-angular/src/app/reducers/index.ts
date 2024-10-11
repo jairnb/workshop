@@ -16,4 +16,14 @@ export const reducers: ActionReducerMap<State> = {
 };
 
 
-export const metaReducers: MetaReducer<State>[] = isDevMode() ? [] : [];
+export function debug(reducer: ActionReducer<any>): ActionReducer<any> {
+  return function(state, action) {
+    console.log('action', action);
+
+    console.log('state', state);
+
+    return reducer(state, action);
+  };
+}
+
+export const metaReducers: MetaReducer<State>[] = isDevMode() ? [debug] : [];

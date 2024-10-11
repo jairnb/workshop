@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="logs initial sept-up">
-      <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/app.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/companies/companies.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/companies/companies.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/workshop-angular/angular.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/companies/companies.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/companies/companies.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/companies/shared/company.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/companies/shared/company.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/companies/shared/company.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/companies/shared/company.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/01145161-4f85-42c3-944a-153b40217810.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/01145161-4f85-42c3-944a-153b40217810.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/companies/state_temporary/companies.reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/companies/state_temporary/companies.reducers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/src/environments/environment.development.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/workshop-angular/src/environments/environment.development.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/workshop-angular/src/environments/environment.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/service/CompanyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/service/CompanyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/controller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/controller/CompanyController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +110,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/pedro/Documents/dev/workshop/source/java/workshop/company-service/src/main/java/org/workshop/companyservice&quot;,
@@ -304,6 +302,8 @@
       <workItem from="1726519408999" duration="815000" />
       <workItem from="1726689213289" duration="1014000" />
       <workItem from="1727661551265" duration="619000" />
+      <workItem from="1727749129532" duration="1918000" />
+      <workItem from="1728524723311" duration="1612000" />
     </task>
     <task id="LOCAL-00001" summary="intellij error">
       <option name="closed" value="true" />

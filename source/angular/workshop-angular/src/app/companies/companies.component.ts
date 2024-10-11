@@ -4,8 +4,8 @@ import { CompanyList } from './shared/company-list.model';
 import { CommonModule, NgFor } from '@angular/common';
 import { randomUUID } from 'crypto';
 import { Observable } from 'rxjs';
-import { Store } from '@ngrx/store';
-import { getAllCompanies } from "./state_temporary/companies.action";
+import { Store, select } from '@ngrx/store';
+import { CompaniesActions, getAllCompanies } from "./state_temporary/companies.action";
 import { allCompanies } from './state_temporary/companies.selector';
 
 @Component({
@@ -21,18 +21,23 @@ export class CompaniesComponent implements OnInit {
   //   companies: []
   // };
 
-  // companies$: Observable<CompanyList>;
-  companies$ = this.store.select(allCompanies);
+  companies$: Observable<CompanyList>;
+  // companies$ = this.store.select(state => state.companies);
 
-  constructor(private companyService: CompanyService, private store: Store<{company: CompanyList}>) {
-    // this.companies$ = this.store.select('company')
+  constructor(private companyService: CompanyService, private store: Store<{companies: CompanyList}>) {
+    this.companies$ = this.store.pipe(select((state) => state.companies));
   }
 
   ngOnInit(): void {
 
-    this.companyService.findAll().subscribe((companies) => {
-      this.store.dispatch(getAllCompanies({companies}));
-    })
+    this.store.dispatch(CompaniesActions.getAll());
+
+    // this.companyService.findAll().subscribe((companies) => {
+    //   this.store.dispatch(getAllCompanies({companies}));
+    // })
+
+
+
     // this.companyService.findAll().subscribe(
     //   {
     //     next: (res: any) => {
@@ -50,7 +55,7 @@ export class CompaniesComponent implements OnInit {
     //     },
 
     //     complete() {
-    //       console.log("is completed");
+    //       console.log("is completed");CompaniesActions
     //     },
     //   }
 
