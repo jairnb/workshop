@@ -5,4 +5,36 @@ spring:
     active: default
   config:
     import: optional:configserver:http://localhost:8888
+  cloud:
+    config:
+      enabled: true
+    gateway:
+      routes:
+        - id: company-service
+          uri: lb://company-service
+          predicates:
+            - Path=/companies/**
+management:
+  endpoint:
+    gateway:
+      enabled: true # default value
+  endpoints:
+    web:
+      exposure:
+        include: gateway
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8082/eureka/
+
+
+logging:
+  level:
+    org:
+      springframework:
+        web: debug
+
+
+server:
+  port: 8081

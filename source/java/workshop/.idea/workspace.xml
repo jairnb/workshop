@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="logs initial sept-up">
-      <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/workshop-angular/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/companies/companies.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/companies/companies.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/companies/shared/company.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/companies/shared/company.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/companies/state_temporary/companies.reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/workshop-angular/src/app/companies/state_temporary/companies.reducers.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/src/environments/environment.development.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/workshop-angular/src/environments/environment.development.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../angular/workshop-angular/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/workshop-angular/src/environments/environment.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/controller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/controller/CompanyController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,6 +297,9 @@
       <workItem from="1727661551265" duration="619000" />
       <workItem from="1727749129532" duration="1918000" />
       <workItem from="1728524723311" duration="1612000" />
+      <workItem from="1728573431933" duration="1533000" />
+      <workItem from="1728661782176" duration="647000" />
+      <workItem from="1728926682235" duration="1585000" />
     </task>
     <task id="LOCAL-00001" summary="intellij error">
       <option name="closed" value="true" />
