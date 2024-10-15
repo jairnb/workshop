@@ -13,7 +13,7 @@ spring:
         - id: company-service
           uri: lb://company-service
           predicates:
-            - Path=/companies/**
+            - Path=/api/v1/company/**, /api/v2/company/**
 management:
   endpoint:
     gateway:
