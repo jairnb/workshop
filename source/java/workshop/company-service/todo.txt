@@ -11,3 +11,13 @@
     - integration
     -end-to-end
 4 -
+
+logging(Grafana Loki), metrics(Grafana Prometheus) and traces (Grafana Tempo).
+
+ metrics and traces, Spring Boot uses Micrometer Observation
+
+
+ Tracing
+    -Logging Correlation IDs
+    logging.pattern.correlation=[${spring.application.name:},%X{traceId:-},%X{spanId:-}]
+    logging.include-application-name=false
