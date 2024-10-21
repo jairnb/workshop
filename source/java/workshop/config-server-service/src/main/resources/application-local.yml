@@ -22,8 +22,11 @@ management:
   endpoint:
     features:
       enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
-
-
-
-
+logging:
+  level:
+    root: debug
