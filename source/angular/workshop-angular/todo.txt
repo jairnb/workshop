@@ -1,1 +1,9 @@
-Move breadcrumb to it own module
+1 - Move breadcrumb to it own module
+
+2 - Get rid of the scripts in angular.jason 
+         "scripts": [
+              "src/assets/js/vendor-all.min.js",
+              "src/assets/js/plugins/bootstrap.min.js",
+              "src/assets/js/plugins/feather.min.js",
+              "src/assets/js/pcoded.min.js"
+            ],

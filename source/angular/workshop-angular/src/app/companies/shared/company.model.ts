@@ -1,4 +1,7 @@
 export interface Company {
-    id: string;
+    id?: string;
     name: string;
+    companyIdentifier?: string
+    phoneNumber?: string
+    address?: []
 }

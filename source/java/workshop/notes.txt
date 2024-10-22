@@ -1,0 +1,17 @@
+build project gradle
+$ ./gradlew clean build && java -jar build/libs/gs-actuator-service-0.1.0.jar
+spring-boot:run
+
+
+
+
+
+=====================================
+ Externalized configuration
+ Health checks
+ Application metrics
+ Service discovery380
+ Circuit breakers
+ Distributed tracing
+==================================
+

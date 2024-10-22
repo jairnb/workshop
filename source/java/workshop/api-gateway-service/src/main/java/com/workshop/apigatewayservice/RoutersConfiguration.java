@@ -11,7 +11,7 @@ class RoutersConfiguration {
     RouteLocator myRoutes(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route(p -> p
-                        .path("/employees")
+                        .path("/employees/**")
                         .filters(f -> f.addRequestHeader("Hello", "World"))
                         .uri("http://localhost:8085"))
                 .build();

@@ -30,12 +30,12 @@ public class CompanyServiceImpl implements CompanyService {
     @Override
     public CompanyDTO save(CompanyDTO companyDTO) {
         Company company = modelMapper.map(companyDTO, Company.class);
-        company.getAddress().forEach(
-                address -> {
-                    address.setCreatedAt(LocalDateTime.now());
-                    address.setUpdatedAt(LocalDateTime.now());
-                }
-        );
+//        company.getAddress().forEach(
+//                address -> {
+//                    address.setCreatedAt(LocalDateTime.now());
+//                    address.setUpdatedAt(LocalDateTime.now());
+//                }
+//        );
         company.setCreatedAt(LocalDateTime.now());
         company.setUpdatedAt(LocalDateTime.now());
         Company result = companyRepository.save(company);

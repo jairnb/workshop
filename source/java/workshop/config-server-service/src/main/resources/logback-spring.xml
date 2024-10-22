@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <springProperty scope="context" name="appName" source="spring.application.name"/>
+    <springProperty scope="context" name="lokiUri" source="loki.uri"/>
+
+    <property name="LOGS" value="./logs"/>
+
+    <appender name="Console"
+              class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>
+                %blue(%d{yyyy-MM-dd'T'HH:mm:ss}) %highlight(%-5level) [%blue(%t)] %yellow(%C{1}): %msg%n%throwable
+            </Pattern>
+        </layout>
+    </appender>
+
+<!--    <appender name="RollingFile"-->
+<!--              class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+<!--        <file>${LOGS}/spring-boot-logger.log</file>-->
+<!--        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">-->
+<!--            <Pattern>%d %p %C{1} [%t] %m%n</Pattern>-->
+<!--        </encoder>-->
+
+<!--        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+<!--            &lt;!&ndash; rollover daily and when the file reaches 10 MegaBytes &ndash;&gt;-->
+<!--            <fileNamePattern>${LOGS}/archived/spring-boot-logger-%d{yyyy-MM-dd}.%i.log</fileNamePattern>-->
+<!--            <timeBasedFileNamingAndTriggeringPolicy-->
+<!--                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFileNamingAndTriggeringPolicy">-->
+<!--                <maxFileSize>10MB</maxFileSize>-->
+<!--            </timeBasedFileNamingAndTriggeringPolicy>-->
+<!--        </rollingPolicy>-->
+<!--    </appender>-->
+
+    	<appender name="LOKI" class="com.github.loki4j.logback.Loki4jAppender">
+    		<batchTimeoutMs>2000</batchTimeoutMs>
+    		<http>
+    			<url>${lokiUri:-http://localhost:3100/loki/api/v1/push}</url>
+    		</http>
+    		<format>
+    			<label>
+    				<pattern>application=${appName},hostname=${HOSTNAME},level=%level</pattern>
+    			</label>
+    			<message>
+    				<pattern>${FILE_LOG_PATTERN}</pattern>
+    			</message>
+    			<sortByTime>true</sortByTime>
+    		</format>
+    	</appender>
+
+
+    <!-- LOG everything at INFO level -->
+    <root level="info">
+<!--        <appender-ref ref="RollingFile"/>-->
+        <appender-ref ref="Console"/>
+        <appender-ref ref="LOKI"/>
+    </root>
+
+
+    <logger name="com.workshop.configserverservice" level="debug">
+<!--        <appender-ref ref="RollingFile"/>-->
+        <appender-ref ref="Console"/>
+        <appender-ref ref="LOKI"/>
+    </logger>
+
+
+</configuration>
