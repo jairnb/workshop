@@ -20,6 +20,6 @@ eureka:
 server:
   port: 8888
 
-logging:
-  level:
-    root: info
+#logging:
+#  level:
+#    root: info

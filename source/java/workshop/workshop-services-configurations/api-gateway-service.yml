@@ -13,7 +13,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: gateway, health
+        include: "*"
   endpoint:
     health:
       probes:

@@ -23,12 +23,12 @@ eureka:
 
 logging:
   config: classpath:logback-spring.xml
-  level:
-    org:
-      springframework:
-        web: debug
-  pattern:
-    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}] tenantId=%X{tenantId:-}"
+#  level:
+#    org:
+#      springframework:
+#        web: debug
+#  pattern:
+#    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}] tenantId=%X{tenantId:-}"
 
 server:
   port: 8085
