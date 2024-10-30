@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="configuration server still fucking things up">
-      <change afterPath="$PROJECT_DIR$/workshop-services-configurations/api-gateway-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workshop-services-configurations/company-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,7 +320,7 @@
       <workItem from="1729284827687" duration="11786000" />
       <workItem from="1729870302943" duration="776000" />
       <workItem from="1730231587088" duration="206000" />
-      <workItem from="1730305243061" duration="3657000" />
+      <workItem from="1730305243061" duration="5189000" />
     </task>
     <task id="LOCAL-00001" summary="intellij error">
       <option name="closed" value="true" />
@@ -450,7 +450,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730308636800</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="configuration server still fucking things up">
+      <option name="closed" value="true" />
+      <created>1730309274065</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1730309274065</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
