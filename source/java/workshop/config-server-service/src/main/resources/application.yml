@@ -10,7 +10,7 @@ spring:
           uri: https://github.com/jairnb/workshop.git
           skipSslValidation: true
           search-paths: /source/java/workshop/workshop-services-configurations
-          default-label: main
+          default-label: dev
 
 
 eureka:
