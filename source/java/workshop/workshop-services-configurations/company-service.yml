@@ -1,43 +1,64 @@
-######## Server Configurations
-server:
-  port: 8085
-
-######## Spring Configurations
 spring:
   application:
     name: company-service
-  profiles:
-    active: default
+  cloud:
+    config:
+      enabled: true
+  config:
+    import: optional:configserver:${CONFIG_SERVER_URL:http://localhost:8888}
   datasource:
     username: root
     password: password
-    url: jdbc:postgresql://localhost:5432/company_service
-  jpa:
-    hibernate:
-      ddl-auto: create
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-        format_sql: true
-    show-sql: false
-    defer-datasource-initialization: true
-  sql:
-    init:
-      mode: always
-
-###### Eureka Configurations
+    url: ${DATABASE_URL_COMPANY_SERVICE:jdbc:postgresql://localhost:5432/company_service}
+  flyway:
+    enabled: true
+#  mvc:
+#    problemdetails:
+#      enabled: true
 eureka:
   client:
+    enabled: true
     serviceUrl:
-      defaultZone: http://localhost:8082/eureka/
+      defaultZone: ${EUREKA_URL:http://localhost:8082/eureka/}
 
-####### Cloud Configurations
-cloud:
-  aws:
-    region:
-      static: us-east-1
-    stack:
-      auto: false
-    credentials:
-      accessKey: ${AWSAccessKeyId}
-      secretKey: ${AWSSecretKey}
+server:
+  port: 8085
+
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    org:
+      springframework:
+        web: debug
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      show-details: always
+  metrics:
+    tags:
+      application: ${spring.application.name}
+    distribution:
+      percentiles-histogram:
+        all: true
+        http.server.requests: true
+  tracing:
+    sampling:
+      probability: 1.0
+  prometheus:
+    metrics:
+      export:
+        step: 10s
+  info:
+    env:
+      enabled: true
+    java:
+      enabled: true
+    os:
+      enabled: true
