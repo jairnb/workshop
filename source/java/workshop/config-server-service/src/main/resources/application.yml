@@ -11,11 +11,12 @@ spring:
           skipSslValidation: true
           search-paths: /source/java/workshop/workshop-services-configurations
           default-label: dev
+      enabled: false
 
 
 eureka:
   client:
-    enabled: true
+    enabled: false
     serviceUrl:
       defaultZone: http://localhost:8082/eureka/
 
