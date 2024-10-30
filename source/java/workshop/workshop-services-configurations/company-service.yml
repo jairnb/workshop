@@ -1,35 +1,26 @@
-spring:
-  application:
-    name: company-service
-  cloud:
-    config:
-      enabled: true
-  config:
-    import: optional:configserver:${CONFIG_SERVER_URL:http://localhost:8888}
-  datasource:
-    username: root
-    password: password
-    url: ${DATABASE_URL_COMPANY_SERVICE:jdbc:postgresql://localhost:5432/company_service}
-  flyway:
-    enabled: true
-#  mvc:
-#    problemdetails:
-#      enabled: true
-eureka:
-  client:
-    enabled: true
-    serviceUrl:
-      defaultZone: ${EUREKA_URL:http://localhost:8082/eureka/}
-
+######## Server Configurations
 server:
   port: 8085
 
-logging:
-  config: classpath:logback-spring.xml
-  level:
-    org:
-      springframework:
-        web: debug
+######## Spring Configurations
+spring:
+  application:
+    name: company-service
+  profiles:
+    active: default
+  datasource:
+    username: root
+    password: password
+    url: jdbc:postgresql://localhost:5432/company_service
+  flyway:
+    enabled: true
+
+###### Eureka Configurations
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8082/eureka/
+
 
 management:
   endpoints:
