@@ -8,6 +8,8 @@ spring:
     name: company-service
   profiles:
     active: default
+  config:
+    import: optional:configserver:${CONFIG_SERVER_URL:http://localhost:8888}
   datasource:
     username: root
     password: password
