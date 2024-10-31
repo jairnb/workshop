@@ -55,4 +55,5 @@ services:
     ports:
       - '5432:5432'
     volumes:
+      - ./platform_components/postgres:/docker-entrypoint-initdb.d
       - /opt/postgres:/var/lib/postgresql/data

@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="finally configuration server error is fixed, finally">
-      <change beforePath="$PROJECT_DIR$/config-server-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workshop-services-configurations/api-gateway-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/workshop-services-configurations/api-gateway-service.yml" afterDir="false" />
+    <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="hope I didn't brake anything">
+      <change afterPath="$PROJECT_DIR$/platform_components/postgres/create-databases.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run-projects.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/company-service.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/company-service.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,13 +155,53 @@
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
+        <option value="Application" />
+        <option value="ChromiumRemoteDebugType" />
+        <option value="CompoundRunConfigurationType" />
+        <option value="DatabaseScript" />
+        <option value="FirefoxRemoteDebugType" />
+        <option value="GroovyScriptRunConfiguration" />
+        <option value="JUnit" />
+        <option value="JarApplication" />
+        <option value="Java Scratch" />
+        <option value="JavaScriptTestRunnerCypress" />
+        <option value="JavaScriptTestRunnerJest" />
+        <option value="JavaScriptTestRunnerKarma" />
+        <option value="JavaScriptTestRunnerPlaywright" />
+        <option value="JavaScriptTestRunnerProtractor" />
+        <option value="JavaScriptTestRunnerVitest" />
+        <option value="JavascriptDebugType" />
+        <option value="JetRunConfigurationType" />
+        <option value="KotlinJavaScriptTestRunnerProtractor" />
+        <option value="KotlinStandaloneScriptRunConfigurationType" />
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MavenRunConfiguration" />
         <option value="MicronautRunConfigurationType" />
+        <option value="NodeJSConfigurationType" />
+        <option value="NodeJsTestRunner" />
+        <option value="NodeWebKit" />
+        <option value="NodeunitConfigurationType" />
+        <option value="OpenRewriteRunConfigurationType" />
+        <option value="QsApplicationConfigurationType" />
         <option value="QuarkusRunConfigurationType" />
+        <option value="ReactNative" />
+        <option value="Remote" />
+        <option value="ShConfigurationType" />
         <option value="SpringBootApplicationConfigurationType" />
+        <option value="SwaggerCodegen" />
+        <option value="TSqltConfigurationType" />
+        <option value="TestNG" />
+        <option value="UtPlSqlConfigurationType" />
+        <option value="XSLT" />
+        <option value="docker-deploy" />
+        <option value="js.build_tools.grunt" />
+        <option value="js.build_tools.gulp" />
+        <option value="js.build_tools.npm" />
+        <option value="mocha-javascript-test-runner" />
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConfigServerServiceApplication">
+  <component name="RunManager" selected="Spring Boot.DiscoveryServerServiceApplication">
     <configuration name="CompanyControllerTest.findAll" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -207,12 +250,6 @@
     <configuration name="DiscoveryServerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="discovery-server-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.workshop.discoveryserverservice.DiscoveryServerServiceApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.workshop.discoveryserverservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -321,7 +358,7 @@
       <workItem from="1729870302943" duration="776000" />
       <workItem from="1730231587088" duration="206000" />
       <workItem from="1730305243061" duration="8948000" />
-      <workItem from="1730333978901" duration="734000" />
+      <workItem from="1730333978901" duration="5591000" />
     </task>
     <task id="LOCAL-00001" summary="intellij error">
       <option name="closed" value="true" />
@@ -563,11 +600,38 @@
       <option name="project" value="LOCAL" />
       <updated>1730334565902</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="hope I didn't brake anything">
+      <option name="closed" value="true" />
+      <created>1730335060919</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1730335060919</updated>
+    </task>
+    <task id="LOCAL-00032" summary="hope I didn't brake anything">
+      <option name="closed" value="true" />
+      <created>1730335504460</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1730335504460</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="intellij error" />
@@ -581,7 +645,8 @@
     <MESSAGE value="restore the files" />
     <MESSAGE value="configuration server still fucking things up" />
     <MESSAGE value="finally configuration server error is fixed, finally" />
-    <option name="LAST_COMMIT_MESSAGE" value="finally configuration server error is fixed, finally" />
+    <MESSAGE value="hope I didn't brake anything" />
+    <option name="LAST_COMMIT_MESSAGE" value="hope I didn't brake anything" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
