@@ -4,8 +4,6 @@ spring:
   cloud:
     config:
       enabled: true
-  config:
-    import: optional:configserver:${CONFIG_SERVER_URL:http://localhost:8888}
   datasource:
     username: root
     password: password
@@ -26,10 +24,6 @@ server:
 
 logging:
   config: classpath:logback-spring.xml
-  level:
-    org:
-      springframework:
-        web: debug
 
 management:
   endpoints:
