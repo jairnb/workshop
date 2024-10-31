@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="configuration server still fucking things up">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="finally configuration server error is fixed, finally">
+      <change beforePath="$PROJECT_DIR$/config-server-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workshop-services-configurations/api-gateway-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/workshop-services-configurations/api-gateway-service.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,7 +321,7 @@
       <workItem from="1729870302943" duration="776000" />
       <workItem from="1730231587088" duration="206000" />
       <workItem from="1730305243061" duration="8948000" />
-      <workItem from="1730333978901" duration="314000" />
+      <workItem from="1730333978901" duration="734000" />
     </task>
     <task id="LOCAL-00001" summary="intellij error">
       <option name="closed" value="true" />
@@ -554,7 +555,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730315619647</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="finally configuration server error is fixed, finally">
+      <option name="closed" value="true" />
+      <created>1730334565901</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1730334565902</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -571,7 +580,8 @@
     <MESSAGE value="api gateway company service endpoint updated" />
     <MESSAGE value="restore the files" />
     <MESSAGE value="configuration server still fucking things up" />
-    <option name="LAST_COMMIT_MESSAGE" value="configuration server still fucking things up" />
+    <MESSAGE value="finally configuration server error is fixed, finally" />
+    <option name="LAST_COMMIT_MESSAGE" value="finally configuration server error is fixed, finally" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,13 +1,24 @@
 spring:
   application:
     name: api-gateway-service
-  config:
+  cloud:
+    config:
+      enabled: true
     gateway:
       routes:
         - id: company-service
           uri: lb://company-service
           predicates:
             - Path=/api/v1/company/**, /api/v2/company/**
+logging:
+  config: classpath:logback-spring.xml
+
+eureka:
+  client:
+    enabled: false
+    serviceUrl:
+      defaultZone: http://localhost:8082/eureka/
+
 management:
   endpoints:
     web:
@@ -18,6 +29,8 @@ management:
       probes:
         enabled: true
       show-details: always
+    gateway:
+      enabled: true # default value
   metrics:
     tags:
       application: ${spring.application.name}
@@ -39,17 +52,6 @@ management:
       enabled: true
     os:
       enabled: true
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8082/eureka/
-
-logging:
-  level:
-    org:
-      springframework:
-        web: info
 
 server:
   port: 8081
