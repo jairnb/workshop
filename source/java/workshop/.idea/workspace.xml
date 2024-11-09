@@ -4,32 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="writing testing company service">
-      <change afterPath="$PROJECT_DIR$/workshop-services-configurations/employee-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/employee-service.main.iml" beforeDir="false" />
+    <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="employee service entity added">
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/dto/EmployeeList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/entity/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/entity/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/repository/CompanyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/resources/db/migration/V1__Init_schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/EmployeeServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/controller/EmployeeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/entity/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/repository/EmployeeRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/service/EmployeeService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/service/impl/EmployeeServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/resources/application-local.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/resources/db/migration/V1__Init_schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/test/java/com/workshop/employeeservice/EmployeeServiceImplApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +84,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -143,14 +129,14 @@
     "Spring Boot.CompanyServiceApplication.executor": "Debug",
     "Spring Boot.ConfigServerServiceApplication.executor": "Debug",
     "Spring Boot.DiscoveryServerServiceApplication.executor": "Debug",
-    "Spring Boot.EmployeeServiceApplication.executor": "Run",
+    "Spring Boot.EmployeeServiceApplication.executor": "Debug",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "dev",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/pedro/Documents/dev/workshop/source/java/workshop/employee-service/src/main/resources",
+    "last_opened_file_path": "/home/pedro/Documents/dev/workshop/source/java/workshop/employee-service/src/main/java/com/workshop/employeeservice",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -160,7 +146,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "preferences.sourceCode.General",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -174,11 +160,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice" />
+      <recent name="$PROJECT_DIR$/employee-service/src/main/resources/db/migration" />
       <recent name="$PROJECT_DIR$/employee-service/src/main/resources" />
       <recent name="$PROJECT_DIR$/workshop-services-configurations" />
       <recent name="$PROJECT_DIR$/api-gateway-service/src/main/resources" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -383,7 +369,7 @@
       <workItem from="1730855449222" duration="798000" />
       <workItem from="1730856932416" duration="7512000" />
       <workItem from="1730920840694" duration="1026000" />
-      <workItem from="1731103964768" duration="5828000" />
+      <workItem from="1731103964768" duration="8111000" />
     </task>
     <task id="LOCAL-00001" summary="intellij error">
       <option name="closed" value="true" />
@@ -665,7 +651,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731111758812</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="employee service initial implementation">
+      <option name="closed" value="true" />
+      <created>1731118889093</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1731118889093</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -698,7 +692,9 @@
     <MESSAGE value="shell command to run multiple spring boot project" />
     <MESSAGE value="workspace.xml changes" />
     <MESSAGE value="writing testing company service" />
-    <option name="LAST_COMMIT_MESSAGE" value="writing testing company service" />
+    <MESSAGE value="employee service initial implementation" />
+    <MESSAGE value="employee service entity added" />
+    <option name="LAST_COMMIT_MESSAGE" value="employee service entity added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
