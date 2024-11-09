@@ -4,28 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="workspace.xml changes">
-      <change afterPath="$PROJECT_DIR$/company-service/compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/company-service/src/test/java/org/workshop/companyservice/controller/CompanyControllerIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/company-service/src/test/java/org/workshop/companyservice/repository/CompanyRepositoryIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/company-service/src/test/resources/logback-test.xml" afterDir="false" />
+    <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="writing testing company service">
+      <change afterPath="$PROJECT_DIR$/workshop-services-configurations/employee-service.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/company-service.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/company-service.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/company-service.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/employee-service.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/aspect/ExceptionControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/aspect/ExceptionControllerAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/controller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/controller/CompanyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/dto/CompanyListDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/dto/CompanyList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/entity/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/entity/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/entity/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/entity/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/service/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/service/CompanyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/service/CompanyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/service/CompanyServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/company-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/src/test/java/org/workshop/companyservice/controller/CompanyControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/test/java/org/workshop/companyservice/controller/CompanyControllerUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/EmployeeServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/controller/EmployeeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/entity/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/repository/EmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/service/EmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/service/impl/EmployeeServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/resources/application-local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/resources/db/migration/V1__Init_schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/test/java/com/workshop/employeeservice/EmployeeServiceImplApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,9 +118,12 @@
     "Gradle.Build company-service.executor": "Run",
     "Gradle.Build config-server-service.executor": "Run",
     "Gradle.Build discovery-server-service.executor": "Run",
+    "Gradle.Build employee-service.executor": "Run",
     "Gradle.CompanyControllerIntegrationTest.findAll.executor": "Run",
     "Gradle.CompanyControllerTest.findAll.executor": "Debug",
     "Gradle.CompanyControllerUnitTest.findAllResponse.executor": "Run",
+    "Gradle.CompanyControllerUnitTest.shouldCreate.executor": "Run",
+    "Gradle.CompanyControllerUnitTest.shouldDelete.executor": "Run",
     "Gradle.CompanyControllerUnitTest.shouldFindAllCompanies.executor": "Run",
     "Gradle.CompanyControllerUnitTest.shouldFindById.executor": "Run",
     "Gradle.CompanyRepositoryIntegrationTest.connectionCheck.executor": "Debug",
@@ -136,21 +143,22 @@
     "Spring Boot.CompanyServiceApplication.executor": "Debug",
     "Spring Boot.ConfigServerServiceApplication.executor": "Debug",
     "Spring Boot.DiscoveryServerServiceApplication.executor": "Debug",
+    "Spring Boot.EmployeeServiceApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "dev",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/pedro/Documents/dev/workshop/source/java/workshop/workshop-services-configurations",
+    "last_opened_file_path": "/home/pedro/Documents/dev/workshop/source/java/workshop/employee-service/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
@@ -166,11 +174,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/employee-service/src/main/resources" />
       <recent name="$PROJECT_DIR$/workshop-services-configurations" />
       <recent name="$PROJECT_DIR$/api-gateway-service/src/main/resources" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice" />
-      <recent name="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/config/database" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -233,127 +241,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.CompanyControllerUnitTest.shouldDelete">
-    <configuration name="CompanyControllerUnitTest.findAllResponse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/company-service" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.workshop.companyservice.controller.CompanyControllerUnitTest.findAllResponse&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="CompanyControllerUnitTest.shouldCreate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/company-service" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.workshop.companyservice.controller.CompanyControllerUnitTest.shouldCreate&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="CompanyControllerUnitTest.shouldDelete" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/company-service" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.workshop.companyservice.controller.CompanyControllerUnitTest.shouldDelete&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="CompanyControllerUnitTest.shouldFindAllCompanies" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/company-service" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.workshop.companyservice.controller.CompanyControllerUnitTest.shouldFindAllCompanies&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="CompanyControllerUnitTest.shouldFindById" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/company-service" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.workshop.companyservice.controller.CompanyControllerUnitTest.shouldFindById&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.EmployeeServiceApplication">
     <configuration name="ApiGatewayServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-gateway-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.workshop.apigatewayservice.ApiGatewayServiceApplication" />
@@ -396,26 +284,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.CompanyControllerUnitTest.shouldCreate" />
-      <item itemvalue="Gradle.CompanyControllerUnitTest.shouldDelete" />
-      <item itemvalue="Gradle.CompanyControllerUnitTest.shouldFindAllCompanies" />
-      <item itemvalue="Gradle.CompanyControllerUnitTest.shouldFindById" />
-      <item itemvalue="Gradle.CompanyControllerUnitTest.findAllResponse" />
       <item itemvalue="Spring Boot.ApiGatewayServiceApplication" />
       <item itemvalue="Spring Boot.CompanyServiceApplication" />
       <item itemvalue="Spring Boot.ConfigServerServiceApplication" />
       <item itemvalue="Spring Boot.DiscoveryServerServiceApplication" />
       <item itemvalue="Spring Boot.EmployeeServiceApplication" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Gradle.CompanyControllerUnitTest.shouldDelete" />
-        <item itemvalue="Gradle.CompanyControllerUnitTest.shouldCreate" />
-        <item itemvalue="Gradle.CompanyControllerUnitTest.shouldFindById" />
-        <item itemvalue="Gradle.CompanyControllerUnitTest.shouldFindAllCompanies" />
-        <item itemvalue="Gradle.CompanyControllerUnitTest.findAllResponse" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -509,7 +383,7 @@
       <workItem from="1730855449222" duration="798000" />
       <workItem from="1730856932416" duration="7512000" />
       <workItem from="1730920840694" duration="1026000" />
-      <workItem from="1731103964768" duration="3185000" />
+      <workItem from="1731103964768" duration="5828000" />
     </task>
     <task id="LOCAL-00001" summary="intellij error">
       <option name="closed" value="true" />
@@ -783,7 +657,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730652725568</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="writing testing company service">
+      <option name="closed" value="true" />
+      <created>1731111758812</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1731111758812</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -815,7 +697,8 @@
     <MESSAGE value="hope I didn't brake anything" />
     <MESSAGE value="shell command to run multiple spring boot project" />
     <MESSAGE value="workspace.xml changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml changes" />
+    <MESSAGE value="writing testing company service" />
+    <option name="LAST_COMMIT_MESSAGE" value="writing testing company service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
