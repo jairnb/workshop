@@ -5,12 +5,12 @@ import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.workshop.companyservice.dto.CompanyListDTO;
+import org.workshop.companyservice.dto.CompanyList;
 import org.workshop.companyservice.service.CompanyService;
 
 //@ExtendWith(MockitoExtension.class)
 @SpringBootTest //(useMainMethod = SpringBootTest.UseMainMethod.ALWAYS)
-class CompanyControllerTest {
+class CompanyControllerIntegrationTest {
 
 
     @Autowired
@@ -25,7 +25,7 @@ class CompanyControllerTest {
 
     @Test
     void findAll() {
-        Mockito.when(companyServiceMock.findAll()).thenReturn(new CompanyListDTO());
+        Mockito.when(companyServiceMock.findAll()).thenReturn(new CompanyList());
 
         companyController.findAll();
 
