@@ -10,13 +10,13 @@ import java.util.Optional;
 import java.util.UUID;
 
 @Repository
-public interface CompanyRepository extends ListCrudRepository<Employee, UUID> {
+public interface EmployeeRepository extends ListCrudRepository<Employee, UUID> {
 
     @Override
-    @Query("SELECT * FROM company WHERE  deleted_at isnull")
+    @Query("SELECT * FROM employee WHERE  deleted_at isnull")
     List<Employee> findAll();
 
     @Override
-    @Query("SELECT * FROM company WHERE  deleted_at isnull and id = :id")
+    @Query("SELECT * FROM employee WHERE  deleted_at isnull and id = :id")
     Optional<Employee> findById(UUID id);
 }

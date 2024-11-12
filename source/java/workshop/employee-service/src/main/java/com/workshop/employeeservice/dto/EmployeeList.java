@@ -13,5 +13,5 @@ import java.util.List;
 @Getter
 @Setter
 public class EmployeeList {
-    private List<Employee> companies;
+    private List<Employee> employees;
 }
