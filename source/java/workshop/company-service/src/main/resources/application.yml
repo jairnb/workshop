@@ -1,12 +1,16 @@
 spring:
   application:
-    name: employee-service
+    name: company-service
   config:
     import: optional:configserver:${CONFIG_SERVER_URL:http://localhost:8888}
   profiles:
-    active: local
+    active: default
 
-
+  flyway:
+    driverClassName: org.postgresql.Driver
+    url: "jdbc:postgresql://localhost:5432/company-service"
+    user: root
+    password: password
 #server:
 #  port: 8081
 #

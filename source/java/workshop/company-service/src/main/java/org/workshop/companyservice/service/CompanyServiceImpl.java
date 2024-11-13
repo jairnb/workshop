@@ -26,9 +26,8 @@ public class CompanyServiceImpl implements CompanyService {
     }
 
     @Override
-    public Company save(Company companyDTO) {
+    public Company save(Company company) {
         logger.info("CompanyServiceImpl::save Entered");
-        Company company = modelMapper.map(companyDTO, Company.class);
 //        company.getAddress().forEach(
 //                address -> {
 //                    address.setCreatedAt(LocalDateTime.now());
@@ -37,16 +36,15 @@ public class CompanyServiceImpl implements CompanyService {
 //        );
         company.setCreatedAt(LocalDateTime.now());
         company.setUpdatedAt(LocalDateTime.now());
-        Company result = companyRepository.save(company);
 
-        return modelMapper.map(result, Company.class);
+        return companyRepository.save(company);
     }
 
     @Override
     public Company findById(UUID uuid) {
         logger.info("CompanyServiceImpl::findById Entered");
         Optional<Company> company = companyRepository.findById(uuid);
-        return company.map(value -> modelMapper.map(value, Company.class)).orElse(null);
+        return company.orElse(null);
     }
 
     @Override

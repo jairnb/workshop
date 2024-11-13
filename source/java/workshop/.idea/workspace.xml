@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="employee service entity added">
-      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/controller/EmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/service/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/service/EmployeeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/employee-service/src/test/java/com/workshop/employeeservice/controller/EmployeeControllerIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/employee-service/src/test/java/com/workshop/employeeservice/controller/EmployeeControllerUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="employee service unit test written. Hope I come back to write more tests, but it's fucking boring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/dto/EmployeeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/dto/EmployeeList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/repository/CompanyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/repository/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/service/CompanyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/service/CompanyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/service/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/service/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workshop-services-configurations/employee-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/workshop-services-configurations/employee-service.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,66 +97,66 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.docker-compose.yml.postgres: Compose Deployment.executor": "Run",
-    "Gradle.Build api-gateway-service.executor": "Run",
-    "Gradle.Build company-service.executor": "Run",
-    "Gradle.Build config-server-service.executor": "Run",
-    "Gradle.Build discovery-server-service.executor": "Run",
-    "Gradle.Build employee-service.executor": "Run",
-    "Gradle.CompanyControllerIntegrationTest.findAll.executor": "Run",
-    "Gradle.CompanyControllerTest.findAll.executor": "Debug",
-    "Gradle.CompanyControllerUnitTest.findAllResponse.executor": "Run",
-    "Gradle.CompanyControllerUnitTest.shouldCreate.executor": "Run",
-    "Gradle.CompanyControllerUnitTest.shouldDelete.executor": "Run",
-    "Gradle.CompanyControllerUnitTest.shouldFindAllCompanies.executor": "Run",
-    "Gradle.CompanyControllerUnitTest.shouldFindById.executor": "Run",
-    "Gradle.CompanyRepositoryIntegrationTest.connectionCheck.executor": "Debug",
-    "Gradle.CompanyRepositoryIntegrationTest.executor": "Run",
-    "Gradle.CompanyRepositoryIntegrationTest.shouldReturnAllCompanies.executor": "Run",
-    "Gradle.CompanyRepositoryIntegrationTest.shouldReturnAllCompanies1.executor": "Run",
-    "Gradle.CompanyRepositoryIntegrationTest.shouldReturnCorrectCompanyName.executor": "Debug",
-    "Gradle.EmployeeControllerUnitTest.shouldFindAllEmployees.executor": "Debug",
-    "Gradle.company-service [test].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.ApiGatewayServiceApplication.executor": "Debug",
-    "Spring Boot.CompanyServiceApplication.executor": "Debug",
-    "Spring Boot.ConfigServerServiceApplication.executor": "Debug",
-    "Spring Boot.DiscoveryServerServiceApplication.executor": "Debug",
-    "Spring Boot.EmployeeServiceApplication.executor": "Debug",
-    "Spring Boot.TestEmployeeServiceApplication.executor": "Run",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "dev",
-    "jdk.selected.JAVA_MODULE": "openjdk-21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/pedro/Documents/dev/workshop/source/java/workshop/employee-service/src/main/java/com/workshop/employeeservice",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.docker-compose.yml.postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build api-gateway-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build company-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build config-server-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build discovery-server-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build employee-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyControllerIntegrationTest.findAll.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyControllerTest.findAll.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.CompanyControllerUnitTest.findAllResponse.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyControllerUnitTest.shouldCreate.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyControllerUnitTest.shouldDelete.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyControllerUnitTest.shouldFindAllCompanies.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyControllerUnitTest.shouldFindById.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyRepositoryIntegrationTest.connectionCheck.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.CompanyRepositoryIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyRepositoryIntegrationTest.shouldReturnAllCompanies.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyRepositoryIntegrationTest.shouldReturnAllCompanies1.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyRepositoryIntegrationTest.shouldReturnCorrectCompanyName.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.EmployeeControllerUnitTest.shouldFindAllEmployees.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.company-service [test].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ApiGatewayServiceApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.CompanyServiceApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ConfigServerServiceApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.DiscoveryServerServiceApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.EmployeeServiceApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.TestEmployeeServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/pedro/Documents/dev/workshop/source/java/workshop/employee-service/src/main/java/com/workshop/employeeservice&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -292,19 +291,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestEmployeeServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="employee-service.test" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.workshop.employeeservice.TestEmployeeServiceApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.workshop.employeeservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -313,17 +299,15 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.EmployeeControllerUnitTest.shouldFindAllEmployees" />
-      <item itemvalue="Spring Boot.ApiGatewayServiceApplication" />
-      <item itemvalue="Spring Boot.CompanyServiceApplication" />
       <item itemvalue="Spring Boot.ConfigServerServiceApplication" />
       <item itemvalue="Spring Boot.DiscoveryServerServiceApplication" />
+      <item itemvalue="Spring Boot.ApiGatewayServiceApplication" />
+      <item itemvalue="Spring Boot.CompanyServiceApplication" />
       <item itemvalue="Spring Boot.EmployeeServiceApplication" />
-      <item itemvalue="Spring Boot.TestEmployeeServiceApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.EmployeeControllerUnitTest.shouldFindAllEmployees" />
-        <item itemvalue="Spring Boot.TestEmployeeServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -421,7 +405,8 @@
       <workItem from="1730920840694" duration="1026000" />
       <workItem from="1731103964768" duration="8253000" />
       <workItem from="1731177105175" duration="599000" />
-      <workItem from="1731375045894" duration="4750000" />
+      <workItem from="1731375045894" duration="4885000" />
+      <workItem from="1731519733752" duration="4200000" />
     </task>
     <task id="LOCAL-00001" summary="intellij error">
       <option name="closed" value="true" />
@@ -719,7 +704,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731121075538</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="employee service unit test written. Hope I come back to write more tests, but it's fucking boring">
+      <option name="closed" value="true" />
+      <created>1731385260321</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1731385260321</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -754,7 +747,8 @@
     <MESSAGE value="writing testing company service" />
     <MESSAGE value="employee service initial implementation" />
     <MESSAGE value="employee service entity added" />
-    <option name="LAST_COMMIT_MESSAGE" value="employee service entity added" />
+    <MESSAGE value="employee service unit test written. Hope I come back to write more tests, but it's fucking boring" />
+    <option name="LAST_COMMIT_MESSAGE" value="employee service unit test written. Hope I come back to write more tests, but it's fucking boring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -781,7 +775,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/service/CompanyServiceImpl.java</url>
-          <line>74</line>
+          <line>72</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
