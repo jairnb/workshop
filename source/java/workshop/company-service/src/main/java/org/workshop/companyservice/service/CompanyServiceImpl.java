@@ -4,9 +4,7 @@ import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
-import org.workshop.companyservice.dto.AddressDTO;
-import org.workshop.companyservice.dto.CompanyDTO;
-import org.workshop.companyservice.dto.CompanyListDTO;
+import org.workshop.companyservice.dto.CompanyList;
 import org.workshop.companyservice.entity.Address;
 import org.workshop.companyservice.entity.Company;
 import org.workshop.companyservice.repository.CompanyRepository;
@@ -28,8 +26,8 @@ public class CompanyServiceImpl implements CompanyService {
     }
 
     @Override
-    public CompanyDTO save(CompanyDTO companyDTO) {
-        Company company = modelMapper.map(companyDTO, Company.class);
+    public Company save(Company company) {
+        logger.info("CompanyServiceImpl::save Entered");
 //        company.getAddress().forEach(
 //                address -> {
 //                    address.setCreatedAt(LocalDateTime.now());
@@ -38,26 +36,27 @@ public class CompanyServiceImpl implements CompanyService {
 //        );
         company.setCreatedAt(LocalDateTime.now());
         company.setUpdatedAt(LocalDateTime.now());
-        Company result = companyRepository.save(company);
 
-        return modelMapper.map(result, CompanyDTO.class);
+        return companyRepository.save(company);
     }
 
     @Override
-    public CompanyDTO findById(UUID uuid) {
+    public Company findById(UUID uuid) {
+        logger.info("CompanyServiceImpl::findById Entered");
         Optional<Company> company = companyRepository.findById(uuid);
-        return company.map(value -> modelMapper.map(value, CompanyDTO.class)).orElse(null);
+        return company.orElse(null);
     }
 
     @Override
-    public CompanyListDTO findAll() {
+    public CompanyList findAll() {
         logger.info("Enter CompanyServiceImpl::findAll");
-        List<CompanyDTO> companyDTOList = companyRepository.findAll().stream().map(company -> modelMapper.map(company, CompanyDTO.class)).toList();
-        return new CompanyListDTO(companyDTOList);
+        List<Company> companies = companyRepository.findAll();
+        return new CompanyList(companies);
     }
 
     @Override
-    public CompanyDTO update(UUID uuid, CompanyDTO companyDTO) throws Exception {
+    public Company update(UUID uuid, Company companyDTO) throws Exception {
+        logger.info("CompanyServiceImpl::update Entered");
         Optional<Company> companyOptional = companyRepository.findById(uuid);
 
         //TODO: Review thr exception
@@ -69,9 +68,9 @@ public class CompanyServiceImpl implements CompanyService {
         company.setUpdatedAt(LocalDateTime.now());
 
         for (Address address : company.getAddress()) {
-            Optional<AddressDTO> addressDTO = companyDTO.getAddress().stream().filter(c -> c.getId().equals(address.getId())).findFirst();
+            Optional<Address> addressToUpdate = companyDTO.getAddress().stream().filter(c -> c.getId().equals(address.getId())).findFirst();
 
-            addressDTO.ifPresent(dto -> {
+            addressToUpdate.ifPresent(dto -> {
                 address.setStreetAddress(dto.getStreetAddress());
                 address.setStreetAddress2(dto.getStreetAddress2());
                 address.setStreetAddress3(dto.getStreetAddress3());
@@ -87,11 +86,12 @@ public class CompanyServiceImpl implements CompanyService {
         }
         Company result = companyRepository.save(company);
 
-        return modelMapper.map(result, CompanyDTO.class);
+        return modelMapper.map(result, Company.class);
     }
 
     @Override
     public void delete(UUID uuid) throws Exception {
+        logger.info("CompanyServiceImpl::delete Entered");
         Optional<Company> companyOptional = companyRepository.findById(uuid);
 
         //TODO: Review thr exception

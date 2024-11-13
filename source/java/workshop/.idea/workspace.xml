@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="finally configuration server error is fixed, finally">
-      <change beforePath="$PROJECT_DIR$/config-server-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workshop-services-configurations/api-gateway-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/workshop-services-configurations/api-gateway-service.yml" afterDir="false" />
+    <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="employee service unit test written. Hope I come back to write more tests, but it's fucking boring">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/service/CompanyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/service/CompanyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/service/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/service/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workshop-services-configurations/employee-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/workshop-services-configurations/employee-service.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +39,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/company-service">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -45,9 +54,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -75,6 +84,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -87,11 +99,26 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Docker.docker-compose.yml.postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Build api-gateway-service.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Build company-service.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Build config-server-service.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Build discovery-server-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build employee-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyControllerIntegrationTest.findAll.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.CompanyControllerTest.findAll.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.CompanyControllerUnitTest.findAllResponse.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyControllerUnitTest.shouldCreate.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyControllerUnitTest.shouldDelete.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyControllerUnitTest.shouldFindAllCompanies.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyControllerUnitTest.shouldFindById.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyRepositoryIntegrationTest.connectionCheck.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.CompanyRepositoryIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyRepositoryIntegrationTest.shouldReturnAllCompanies.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyRepositoryIntegrationTest.shouldReturnAllCompanies1.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyRepositoryIntegrationTest.shouldReturnCorrectCompanyName.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.EmployeeControllerUnitTest.shouldFindAllEmployees.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.company-service [test].executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -103,21 +130,23 @@
     &quot;Spring Boot.CompanyServiceApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.ConfigServerServiceApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.DiscoveryServerServiceApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.EmployeeServiceApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.TestEmployeeServiceApplication.executor&quot;: &quot;Run&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/pedro/Documents/dev/workshop/source/java/workshop/workshop-services-configurations&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/pedro/Documents/dev/workshop/source/java/workshop/employee-service/src/main/java/com/workshop/employeeservice&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -133,36 +162,80 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice" />
+      <recent name="$PROJECT_DIR$/employee-service/src/main/resources/db/migration" />
+      <recent name="$PROJECT_DIR$/employee-service/src/main/resources" />
       <recent name="$PROJECT_DIR$/workshop-services-configurations" />
       <recent name="$PROJECT_DIR$/api-gateway-service/src/main/resources" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice" />
-      <recent name="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/config/database" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.workshop.employeeservice.controller" />
+      <recent name="org.workshop.companyservice.repository" />
       <recent name="org.workshop.companyservice.controller" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.workshop.employeeservice.controller" />
+      <recent name="org.workshop.companyservice.controller" />
       <recent name="org.workshop.companyservice.dto" />
     </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
+        <option value="Application" />
+        <option value="ChromiumRemoteDebugType" />
+        <option value="CompoundRunConfigurationType" />
+        <option value="DatabaseScript" />
+        <option value="FirefoxRemoteDebugType" />
+        <option value="GroovyScriptRunConfiguration" />
+        <option value="JUnit" />
+        <option value="JarApplication" />
+        <option value="Java Scratch" />
+        <option value="JavaScriptTestRunnerCypress" />
+        <option value="JavaScriptTestRunnerJest" />
+        <option value="JavaScriptTestRunnerKarma" />
+        <option value="JavaScriptTestRunnerPlaywright" />
+        <option value="JavaScriptTestRunnerProtractor" />
+        <option value="JavaScriptTestRunnerVitest" />
+        <option value="JavascriptDebugType" />
+        <option value="JetRunConfigurationType" />
+        <option value="KotlinJavaScriptTestRunnerProtractor" />
+        <option value="KotlinStandaloneScriptRunConfigurationType" />
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MavenRunConfiguration" />
         <option value="MicronautRunConfigurationType" />
+        <option value="NodeJSConfigurationType" />
+        <option value="NodeJsTestRunner" />
+        <option value="NodeWebKit" />
+        <option value="NodeunitConfigurationType" />
+        <option value="OpenRewriteRunConfigurationType" />
+        <option value="QsApplicationConfigurationType" />
         <option value="QuarkusRunConfigurationType" />
+        <option value="ReactNative" />
+        <option value="Remote" />
+        <option value="ShConfigurationType" />
         <option value="SpringBootApplicationConfigurationType" />
+        <option value="SwaggerCodegen" />
+        <option value="TSqltConfigurationType" />
+        <option value="TestNG" />
+        <option value="UtPlSqlConfigurationType" />
+        <option value="XSLT" />
+        <option value="docker-deploy" />
+        <option value="js.build_tools.grunt" />
+        <option value="js.build_tools.gulp" />
+        <option value="js.build_tools.npm" />
+        <option value="mocha-javascript-test-runner" />
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConfigServerServiceApplication">
-    <configuration name="CompanyControllerTest.findAll" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.EmployeeControllerUnitTest.shouldFindAllEmployees">
+    <configuration name="EmployeeControllerUnitTest.shouldFindAllEmployees" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/company-service" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/employee-service" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -172,7 +245,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.workshop.companyservice.controller.CompanyControllerTest.findAll&quot;" />
+            <option value="&quot;com.workshop.employeeservice.controller.EmployeeControllerUnitTest.shouldFindAllEmployees&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -204,15 +277,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiscoveryServerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="DiscoveryServerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="discovery-server-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.workshop.discoveryserverservice.DiscoveryServerServiceApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.workshop.discoveryserverservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -224,26 +291,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Gradle.CompanyControllerTest.findAll" />
+      <item itemvalue="Gradle.EmployeeControllerUnitTest.shouldFindAllEmployees" />
       <item itemvalue="Spring Boot.ConfigServerServiceApplication" />
+      <item itemvalue="Spring Boot.DiscoveryServerServiceApplication" />
       <item itemvalue="Spring Boot.ApiGatewayServiceApplication" />
       <item itemvalue="Spring Boot.CompanyServiceApplication" />
       <item itemvalue="Spring Boot.EmployeeServiceApplication" />
-      <item itemvalue="Spring Boot.DiscoveryServerServiceApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.DiscoveryServerServiceApplication" />
-        <item itemvalue="Gradle.CompanyControllerTest.findAll" />
+        <item itemvalue="Gradle.EmployeeControllerUnitTest.shouldFindAllEmployees" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
       </set>
     </attachedChunks>
   </component>
@@ -321,7 +393,20 @@
       <workItem from="1729870302943" duration="776000" />
       <workItem from="1730231587088" duration="206000" />
       <workItem from="1730305243061" duration="8948000" />
-      <workItem from="1730333978901" duration="734000" />
+      <workItem from="1730333978901" duration="6384000" />
+      <workItem from="1730399691088" duration="1550000" />
+      <workItem from="1730416255362" duration="3152000" />
+      <workItem from="1730650184376" duration="7274000" />
+      <workItem from="1730741094816" duration="5654000" />
+      <workItem from="1730769592979" duration="5235000" />
+      <workItem from="1730821192042" duration="1842000" />
+      <workItem from="1730855449222" duration="798000" />
+      <workItem from="1730856932416" duration="7512000" />
+      <workItem from="1730920840694" duration="1026000" />
+      <workItem from="1731103964768" duration="8253000" />
+      <workItem from="1731177105175" duration="599000" />
+      <workItem from="1731375045894" duration="4885000" />
+      <workItem from="1731519733752" duration="4200000" />
     </task>
     <task id="LOCAL-00001" summary="intellij error">
       <option name="closed" value="true" />
@@ -563,11 +648,86 @@
       <option name="project" value="LOCAL" />
       <updated>1730334565902</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="hope I didn't brake anything">
+      <option name="closed" value="true" />
+      <created>1730335060919</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1730335060919</updated>
+    </task>
+    <task id="LOCAL-00032" summary="hope I didn't brake anything">
+      <option name="closed" value="true" />
+      <created>1730335504460</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1730335504460</updated>
+    </task>
+    <task id="LOCAL-00033" summary="shell command to run multiple spring boot project">
+      <option name="closed" value="true" />
+      <created>1730339739266</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1730339739266</updated>
+    </task>
+    <task id="LOCAL-00034" summary="workspace.xml changes">
+      <option name="closed" value="true" />
+      <created>1730652725568</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1730652725568</updated>
+    </task>
+    <task id="LOCAL-00035" summary="writing testing company service">
+      <option name="closed" value="true" />
+      <created>1731111758812</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1731111758812</updated>
+    </task>
+    <task id="LOCAL-00036" summary="employee service initial implementation">
+      <option name="closed" value="true" />
+      <created>1731118889093</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1731118889093</updated>
+    </task>
+    <task id="LOCAL-00037" summary="employee service entity added">
+      <option name="closed" value="true" />
+      <created>1731121075538</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1731121075538</updated>
+    </task>
+    <task id="LOCAL-00038" summary="employee service unit test written. Hope I come back to write more tests, but it's fucking boring">
+      <option name="closed" value="true" />
+      <created>1731385260321</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1731385260321</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="intellij error" />
@@ -581,7 +741,14 @@
     <MESSAGE value="restore the files" />
     <MESSAGE value="configuration server still fucking things up" />
     <MESSAGE value="finally configuration server error is fixed, finally" />
-    <option name="LAST_COMMIT_MESSAGE" value="finally configuration server error is fixed, finally" />
+    <MESSAGE value="hope I didn't brake anything" />
+    <MESSAGE value="shell command to run multiple spring boot project" />
+    <MESSAGE value="workspace.xml changes" />
+    <MESSAGE value="writing testing company service" />
+    <MESSAGE value="employee service initial implementation" />
+    <MESSAGE value="employee service entity added" />
+    <MESSAGE value="employee service unit test written. Hope I come back to write more tests, but it's fucking boring" />
+    <option name="LAST_COMMIT_MESSAGE" value="employee service unit test written. Hope I come back to write more tests, but it's fucking boring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -608,8 +775,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/service/CompanyServiceImpl.java</url>
-          <line>73</line>
+          <line>72</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/aspect/ExceptionControllerAdvice.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

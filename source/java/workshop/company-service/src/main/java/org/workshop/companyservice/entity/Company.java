@@ -1,6 +1,7 @@
 package org.workshop.companyservice.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,6 +23,7 @@ public class Company {
     private long phoneNumber;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
+    @JsonIgnore
     private LocalDateTime deletedAt;
 
     @MappedCollection(idColumn = "company")

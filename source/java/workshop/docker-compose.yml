@@ -47,12 +47,13 @@ services:
 
   postgres:
     container_name: postgres_db
-    image: postgres:latest
-    restart: always
+    image: postgres:16.0
+    restart: "no"
     environment:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=password
     ports:
       - '5432:5432'
     volumes:
+      - ./platform_components/postgres:/docker-entrypoint-initdb.d
       - /opt/postgres:/var/lib/postgresql/data

@@ -1,4 +1,4 @@
-package org.workshop.companyservice.entity;
+package com.workshop.employeeservice.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
@@ -15,7 +15,6 @@ import java.util.UUID;
 public class Address {
     @Id
     private UUID id;
-//    AggregateReference<Company, UUID> company;
     private String streetAddress;
     private String streetAddress2;
     private String streetAddress3;
