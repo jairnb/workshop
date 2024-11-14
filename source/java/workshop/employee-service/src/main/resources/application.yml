@@ -6,11 +6,11 @@ spring:
   profiles:
     active: default
 
-  flyway:
-    driverClassName: org.postgresql.Driver
-    url: "jdbc:postgresql://localhost:5432/employee-service"
-    user: root
-    password: password
+#  flyway:
+#    driverClassName: org.postgresql.Driver
+#    url: "jdbc:postgresql://localhost:5432/employee-service"
+#    user: root
+#    password: password
 
 #server:
 #  port: 8081
