@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="employee service unit test written. Hope I come back to write more tests, but it's fucking boring">
+    <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="application properties updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/service/CompanyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/service/CompanyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/resources/application-local.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/company-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/service/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/service/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/service/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/employee-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workshop-services-configurations/employee-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/workshop-services-configurations/employee-service.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,12 +69,22 @@
     &quot;assignee&quot;: &quot;jairnb&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/jairnb/workshop.git&quot;,
-    &quot;accountId&quot;: &quot;1b2de4e5-9c2e-4ee7-aa9f-b7de27a01b2f&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/jairnb/workshop.git",
+    "accountId": "1b2de4e5-9c2e-4ee7-aa9f-b7de27a01b2f"
+  },
+  "recentNewPullRequestHead": {
+    "server": {
+      "useHttp": false,
+      "host": "github.com",
+      "port": null,
+      "suffix": null
+    },
+    "owner": "jairnb",
+    "repository": "workshop"
   }
-}</component>
+}]]></component>
   <component name="KotlinCodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
@@ -97,66 +107,66 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Docker.docker-compose.yml.postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build api-gateway-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build company-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build config-server-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build discovery-server-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build employee-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CompanyControllerIntegrationTest.findAll.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CompanyControllerTest.findAll.executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.CompanyControllerUnitTest.findAllResponse.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CompanyControllerUnitTest.shouldCreate.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CompanyControllerUnitTest.shouldDelete.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CompanyControllerUnitTest.shouldFindAllCompanies.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CompanyControllerUnitTest.shouldFindById.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CompanyRepositoryIntegrationTest.connectionCheck.executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.CompanyRepositoryIntegrationTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CompanyRepositoryIntegrationTest.shouldReturnAllCompanies.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CompanyRepositoryIntegrationTest.shouldReturnAllCompanies1.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CompanyRepositoryIntegrationTest.shouldReturnCorrectCompanyName.executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.EmployeeControllerUnitTest.shouldFindAllEmployees.executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.company-service [test].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ApiGatewayServiceApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.CompanyServiceApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ConfigServerServiceApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.DiscoveryServerServiceApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.EmployeeServiceApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.TestEmployeeServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/pedro/Documents/dev/workshop/source/java/workshop/employee-service/src/main/java/com/workshop/employeeservice&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.docker-compose.yml.postgres: Compose Deployment.executor": "Run",
+    "Gradle.Build api-gateway-service.executor": "Run",
+    "Gradle.Build company-service.executor": "Run",
+    "Gradle.Build config-server-service.executor": "Run",
+    "Gradle.Build discovery-server-service.executor": "Run",
+    "Gradle.Build employee-service.executor": "Run",
+    "Gradle.CompanyControllerIntegrationTest.findAll.executor": "Run",
+    "Gradle.CompanyControllerTest.findAll.executor": "Debug",
+    "Gradle.CompanyControllerUnitTest.findAllResponse.executor": "Run",
+    "Gradle.CompanyControllerUnitTest.shouldCreate.executor": "Run",
+    "Gradle.CompanyControllerUnitTest.shouldDelete.executor": "Run",
+    "Gradle.CompanyControllerUnitTest.shouldFindAllCompanies.executor": "Run",
+    "Gradle.CompanyControllerUnitTest.shouldFindById.executor": "Run",
+    "Gradle.CompanyRepositoryIntegrationTest.connectionCheck.executor": "Debug",
+    "Gradle.CompanyRepositoryIntegrationTest.executor": "Run",
+    "Gradle.CompanyRepositoryIntegrationTest.shouldReturnAllCompanies.executor": "Run",
+    "Gradle.CompanyRepositoryIntegrationTest.shouldReturnAllCompanies1.executor": "Run",
+    "Gradle.CompanyRepositoryIntegrationTest.shouldReturnCorrectCompanyName.executor": "Debug",
+    "Gradle.EmployeeControllerUnitTest.shouldFindAllEmployees.executor": "Debug",
+    "Gradle.company-service [test].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ApiGatewayServiceApplication.executor": "Debug",
+    "Spring Boot.CompanyServiceApplication.executor": "Debug",
+    "Spring Boot.ConfigServerServiceApplication.executor": "Debug",
+    "Spring Boot.DiscoveryServerServiceApplication.executor": "Debug",
+    "Spring Boot.EmployeeServiceApplication.executor": "Debug",
+    "Spring Boot.TestEmployeeServiceApplication.executor": "Run",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "#4 on dev",
+    "jdk.selected.JAVA_MODULE": "openjdk-21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/pedro/Documents/dev/workshop/source/java/workshop/employee-service/src/main/java/com/workshop/employeeservice",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -231,7 +241,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.EmployeeControllerUnitTest.shouldFindAllEmployees">
+  <component name="RunManager" selected="Spring Boot.CompanyServiceApplication">
     <configuration name="EmployeeControllerUnitTest.shouldFindAllEmployees" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -406,7 +416,7 @@
       <workItem from="1731103964768" duration="8253000" />
       <workItem from="1731177105175" duration="599000" />
       <workItem from="1731375045894" duration="4885000" />
-      <workItem from="1731519733752" duration="4200000" />
+      <workItem from="1731519733752" duration="12756000" />
     </task>
     <task id="LOCAL-00001" summary="intellij error">
       <option name="closed" value="true" />
@@ -712,7 +722,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731385260321</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="application properties updated">
+      <option name="closed" value="true" />
+      <created>1731525810202</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1731525810202</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -748,7 +766,8 @@
     <MESSAGE value="employee service initial implementation" />
     <MESSAGE value="employee service entity added" />
     <MESSAGE value="employee service unit test written. Hope I come back to write more tests, but it's fucking boring" />
-    <option name="LAST_COMMIT_MESSAGE" value="employee service unit test written. Hope I come back to write more tests, but it's fucking boring" />
+    <MESSAGE value="application properties updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="application properties updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -5,20 +5,3 @@ spring:
     import: optional:configserver:${CONFIG_SERVER_URL:http://localhost:8888}
   profiles:
     active: default
-
-  flyway:
-    driverClassName: org.postgresql.Driver
-    url: "jdbc:postgresql://localhost:5432/company-service"
-    user: root
-    password: password
-#server:
-#  port: 8081
-#
-#eureka:
-#  instance:
-#    hostname: localhost
-#  client:
-#    registerWithEureka: false  #Eureka cannot register itself as a client.
-#    fetchRegistry: false
-#    serviceUrl:
-#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

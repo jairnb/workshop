@@ -24,6 +24,7 @@ dependencies {
     implementation 'org.modelmapper:modelmapper:3.2.0'
     implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+//    implementation 'org.flywaydb:flyway-core'
     implementation 'org.flywaydb:flyway-database-postgresql:10.14.0'
     implementation 'org.springframework.cloud:spring-cloud-starter-config'
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
@@ -35,7 +36,7 @@ dependencies {
     runtimeOnly 'io.micrometer:micrometer-registry-prometheus'
     runtimeOnly 'com.github.loki4j:loki-logback-appender:1.5.1'
 
-    developmentOnly 'org.springframework.boot:spring-boot-docker-compose'
+//    developmentOnly 'org.springframework.boot:spring-boot-docker-compose'
 
     compileOnly 'org.projectlombok:lombok:1.18.30'
 
@@ -45,9 +46,9 @@ dependencies {
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.30'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'org.springframework.boot:spring-boot-testcontainers'
-    testImplementation 'org.testcontainers:junit-jupiter'
-    testImplementation 'org.testcontainers:postgresql'
+//    testImplementation 'org.springframework.boot:spring-boot-testcontainers'
+//    testImplementation 'org.testcontainers:junit-jupiter'
+//    testImplementation 'org.testcontainers:postgresql'
 
 }
 

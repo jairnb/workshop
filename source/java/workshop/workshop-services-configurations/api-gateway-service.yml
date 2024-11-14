@@ -10,6 +10,10 @@ spring:
           uri: lb://company-service
           predicates:
             - Path=/api/v1/company/**, /api/v2/company/**
+        - id: employee-service
+          uri: lb://employee-service
+          predicates:
+            - Path=/api/v1/employee/**
 logging:
   config: classpath:logback-spring.xml
 
