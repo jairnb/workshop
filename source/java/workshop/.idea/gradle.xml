@@ -12,6 +12,14 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/authentication-server" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/authentication-server" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/company-service" />
         <option name="modules">
           <set>
@@ -24,6 +32,22 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/config-server-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/customer-service" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/customer-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/department-service" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/department-service" />
           </set>
         </option>
       </GradleProjectSettings>
@@ -41,6 +65,46 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/employee-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/invoice-service" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/invoice-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/product-service" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/product-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/supplier-service" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/supplier-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/tools-service" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/tools-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/vehicle-service" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/vehicle-service" />
           </set>
         </option>
       </GradleProjectSettings>

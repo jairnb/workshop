@@ -6,10 +6,19 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/api-gateway-service" />
+    <file type="web" url="file://$PROJECT_DIR$/authentication-server" />
+    <file type="web" url="file://$PROJECT_DIR$/authenticaton-server" />
     <file type="web" url="file://$PROJECT_DIR$/company-service" />
     <file type="web" url="file://$PROJECT_DIR$/config-server-service" />
+    <file type="web" url="file://$PROJECT_DIR$/customer-service" />
+    <file type="web" url="file://$PROJECT_DIR$/department-service" />
     <file type="web" url="file://$PROJECT_DIR$/discovery-server-service" />
     <file type="web" url="file://$PROJECT_DIR$/employee-service" />
+    <file type="web" url="file://$PROJECT_DIR$/invoice-service" />
+    <file type="web" url="file://$PROJECT_DIR$/product-service" />
+    <file type="web" url="file://$PROJECT_DIR$/supplier-service" />
+    <file type="web" url="file://$PROJECT_DIR$/tools-service" />
+    <file type="web" url="file://$PROJECT_DIR$/vehicle-service" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_21" project-jdk-name="openjdk-21" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

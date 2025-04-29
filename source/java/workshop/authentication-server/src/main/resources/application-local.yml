@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: authentication-server
+  datasource:
+    username: root
+    password: password
+    url: ${DATABASE_URL_COMPANY_SERVICE:jdbc:postgresql://localhost:5432/authentication}
+  flyway:
+    enabled: true
+
+server:
+  port: 8085
+

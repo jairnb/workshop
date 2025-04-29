@@ -5,14 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="application properties updated">
+      <change afterPath="$PROJECT_DIR$/authentication-server/src/main/java/com/workshop/authenticationserver/model/MyUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication-server/src/main/java/com/workshop/authenticationserver/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication-server/src/main/java/com/workshop/authenticationserver/security/MyUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication-server/src/main/java/com/workshop/authenticationserver/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication-server/src/main/resources/application-local.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication-server/src/main/resources/migration/V1__Init_schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/resources/application-local.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/entity/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/entity/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/entity/Employee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,16 +29,43 @@
     <projectState path="$PROJECT_DIR$/api-gateway-service">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/authentication-server">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/authenticaton-server">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/company-service">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/config-server-service">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/customer-service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/department-service">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/discovery-server-service">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/employee-service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/invoice-service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/product-service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/supplier-service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/tools-service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/vehicle-service">
       <ProjectState />
     </projectState>
   </component>
@@ -64,27 +97,31 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;
+    }
+  ],
   &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;jairnb&quot;
+    &quot;state&quot;: &quot;OPEN&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/jairnb/workshop.git",
-    "accountId": "1b2de4e5-9c2e-4ee7-aa9f-b7de27a01b2f"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jairnb/workshop.git&quot;,
+    &quot;accountId&quot;: &quot;1b2de4e5-9c2e-4ee7-aa9f-b7de27a01b2f&quot;
   },
-  "recentNewPullRequestHead": {
-    "server": {
-      "useHttp": false,
-      "host": "github.com",
-      "port": null,
-      "suffix": null
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
     },
-    "owner": "jairnb",
-    "repository": "workshop"
+    &quot;owner&quot;: &quot;jairnb&quot;,
+    &quot;repository&quot;: &quot;workshop&quot;
   }
-}]]></component>
+}</component>
   <component name="KotlinCodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
@@ -107,76 +144,76 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.docker-compose.yml.postgres: Compose Deployment.executor": "Run",
-    "Gradle.Build api-gateway-service.executor": "Run",
-    "Gradle.Build company-service.executor": "Run",
-    "Gradle.Build config-server-service.executor": "Run",
-    "Gradle.Build discovery-server-service.executor": "Run",
-    "Gradle.Build employee-service.executor": "Run",
-    "Gradle.CompanyControllerIntegrationTest.findAll.executor": "Run",
-    "Gradle.CompanyControllerTest.findAll.executor": "Debug",
-    "Gradle.CompanyControllerUnitTest.findAllResponse.executor": "Run",
-    "Gradle.CompanyControllerUnitTest.shouldCreate.executor": "Run",
-    "Gradle.CompanyControllerUnitTest.shouldDelete.executor": "Run",
-    "Gradle.CompanyControllerUnitTest.shouldFindAllCompanies.executor": "Run",
-    "Gradle.CompanyControllerUnitTest.shouldFindById.executor": "Run",
-    "Gradle.CompanyRepositoryIntegrationTest.connectionCheck.executor": "Debug",
-    "Gradle.CompanyRepositoryIntegrationTest.executor": "Run",
-    "Gradle.CompanyRepositoryIntegrationTest.shouldReturnAllCompanies.executor": "Run",
-    "Gradle.CompanyRepositoryIntegrationTest.shouldReturnAllCompanies1.executor": "Run",
-    "Gradle.CompanyRepositoryIntegrationTest.shouldReturnCorrectCompanyName.executor": "Debug",
-    "Gradle.EmployeeControllerUnitTest.shouldFindAllEmployees.executor": "Debug",
-    "Gradle.company-service [test].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.ApiGatewayServiceApplication.executor": "Debug",
-    "Spring Boot.CompanyServiceApplication.executor": "Debug",
-    "Spring Boot.ConfigServerServiceApplication.executor": "Debug",
-    "Spring Boot.DiscoveryServerServiceApplication.executor": "Debug",
-    "Spring Boot.EmployeeServiceApplication.executor": "Debug",
-    "Spring Boot.TestEmployeeServiceApplication.executor": "Run",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "#4 on dev",
-    "jdk.selected.JAVA_MODULE": "openjdk-21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/pedro/Documents/dev/workshop/source/java/workshop/employee-service/src/main/java/com/workshop/employeeservice",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.docker-compose.yml.postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build api-gateway-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build company-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build config-server-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build discovery-server-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build employee-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyControllerIntegrationTest.findAll.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyControllerTest.findAll.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.CompanyControllerUnitTest.findAllResponse.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyControllerUnitTest.shouldCreate.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyControllerUnitTest.shouldDelete.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyControllerUnitTest.shouldFindAllCompanies.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyControllerUnitTest.shouldFindById.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyRepositoryIntegrationTest.connectionCheck.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.CompanyRepositoryIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyRepositoryIntegrationTest.shouldReturnAllCompanies.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyRepositoryIntegrationTest.shouldReturnAllCompanies1.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CompanyRepositoryIntegrationTest.shouldReturnCorrectCompanyName.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.EmployeeControllerUnitTest.shouldFindAllEmployees.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.company-service [test].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ApiGatewayServiceApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.CompanyServiceApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ConfigServerServiceApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.DiscoveryServerServiceApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.EmployeeServiceApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.TestEmployeeServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/pedro/Documents/dev/workshop/source/java/workshop/authentication-server/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/authentication-server/src/main/resources" />
       <recent name="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice" />
       <recent name="$PROJECT_DIR$/employee-service/src/main/resources/db/migration" />
       <recent name="$PROJECT_DIR$/employee-service/src/main/resources" />
       <recent name="$PROJECT_DIR$/workshop-services-configurations" />
-      <recent name="$PROJECT_DIR$/api-gateway-service/src/main/resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -241,7 +278,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CompanyServiceApplication">
+  <component name="RunManager" selected="Spring Boot.EmployeeServiceApplication">
     <configuration name="EmployeeControllerUnitTest.shouldFindAllEmployees" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -273,6 +310,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AuthenticationServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="authentication-server.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.workshop.authenticationserver.AuthenticationServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthenticatonServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="authenticaton-server.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.workshop.authenticatonserver.AuthenticatonServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CompanyServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="company-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.workshop.companyservice.CompanyServiceApplication" />
@@ -283,6 +334,20 @@
     <configuration name="ConfigServerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="config-server-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.workshop.configserverservice.ConfigServerServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="customer-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.workshop.customerservice.CustomerServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DepartmentServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="department-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.workshop.departmentservice.DepartmentServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -301,6 +366,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="InvoiceServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="invoice-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.workshop.invoiceservice.InvoiceServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="product-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.workshop.productservice.ProductServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SupplierServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="supplier-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.workshop.supplierservice.SupplierServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ToolsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="tools-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.workshop.toolsservice.ToolsServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VehicleServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="vehicle-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.workshop.vehicleservice.VehicleServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -309,11 +409,20 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.EmployeeControllerUnitTest.shouldFindAllEmployees" />
-      <item itemvalue="Spring Boot.ConfigServerServiceApplication" />
-      <item itemvalue="Spring Boot.DiscoveryServerServiceApplication" />
       <item itemvalue="Spring Boot.ApiGatewayServiceApplication" />
+      <item itemvalue="Spring Boot.AuthenticationServerApplication" />
+      <item itemvalue="Spring Boot.AuthenticatonServerApplication" />
       <item itemvalue="Spring Boot.CompanyServiceApplication" />
+      <item itemvalue="Spring Boot.ConfigServerServiceApplication" />
+      <item itemvalue="Spring Boot.CustomerServiceApplication" />
+      <item itemvalue="Spring Boot.DepartmentServiceApplication" />
+      <item itemvalue="Spring Boot.DiscoveryServerServiceApplication" />
       <item itemvalue="Spring Boot.EmployeeServiceApplication" />
+      <item itemvalue="Spring Boot.InvoiceServiceApplication" />
+      <item itemvalue="Spring Boot.ProductServiceApplication" />
+      <item itemvalue="Spring Boot.SupplierServiceApplication" />
+      <item itemvalue="Spring Boot.ToolsServiceApplication" />
+      <item itemvalue="Spring Boot.VehicleServiceApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -416,7 +525,16 @@
       <workItem from="1731103964768" duration="8253000" />
       <workItem from="1731177105175" duration="599000" />
       <workItem from="1731375045894" duration="4885000" />
-      <workItem from="1731519733752" duration="12756000" />
+      <workItem from="1731519733752" duration="20371000" />
+      <workItem from="1731627142933" duration="1776000" />
+      <workItem from="1733173428740" duration="8272000" />
+      <workItem from="1733260585828" duration="1236000" />
+      <workItem from="1733504521480" duration="3170000" />
+      <workItem from="1733757376383" duration="9838000" />
+      <workItem from="1733789795473" duration="1219000" />
+      <workItem from="1734107817890" duration="605000" />
+      <workItem from="1734560531998" duration="698000" />
+      <workItem from="1734753827082" duration="47000" />
     </task>
     <task id="LOCAL-00001" summary="intellij error">
       <option name="closed" value="true" />
@@ -730,7 +848,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731525810202</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="application properties updated">
+      <option name="closed" value="true" />
+      <created>1731543339775</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1731543339775</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

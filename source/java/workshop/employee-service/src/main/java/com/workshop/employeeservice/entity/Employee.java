@@ -6,10 +6,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.relational.core.mapping.MappedCollection;
+import org.springframework.data.jdbc.core.mapping.AggregateReference;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Set;
 import java.util.UUID;
 
 @Data
@@ -23,13 +23,20 @@ public class Employee {
     private String middleName;
     private String companyId;
     private long phoneNumber;
+    private String email;
+    private String ssn;
+    private LocalDate birthdate;
+    private LocalDate hireDate;
+    private boolean status;
 
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
     @JsonIgnore
     private LocalDateTime deletedAt;
 
-    @MappedCollection(idColumn = "employee")
-    private Set<Address> address;
+//    @MappedCollection(idColumn="id", keyColumn="employee")
+//    private Address address;
+
+    AggregateReference<Address,Long> address;
 
 }

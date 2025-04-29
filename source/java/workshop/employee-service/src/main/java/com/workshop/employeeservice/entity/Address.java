@@ -23,8 +23,6 @@ public class Address {
     private String zip;
     private String country;
     private String county;
-    private long latitude;
-    private long longitude;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
     @JsonIgnore
