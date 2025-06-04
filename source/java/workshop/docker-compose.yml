@@ -17,6 +17,8 @@ services:
       - ./platform_components/grafana/datasource.yml:/etc/grafana/provisioning/datasources/datasource.yml
       - ./platform_components/grafana/dashboards:/etc/grafana/provisioning/dashboards
       - ./platform_components/grafana/grafana.ini:/etc/grafana/grafana.ini
+    networks:
+      - workshop_network
 
   loki:
     image: grafana/loki:latest
@@ -24,6 +26,8 @@ services:
     command: -config.file=/etc/loki/local-config.yaml
     ports:
       - "3100:3100"
+    networks:
+      - workshop_network
 
   prometheus:
     image: prom/prometheus:latest
@@ -32,18 +36,22 @@ services:
       - "9090:9090"
     volumes:
       - ./platform_components/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    networks:
+      - workshop_network
 
   tempo:
     image: grafana/tempo:latest
     container_name: tempo
     command: -config.file /etc/tempo-config.yml
     ports:
-      - "3110:3100"     # Tempo
+      - "3110:3110"     # Tempo
       - "4317:4317"     # OTLP gRPC
       - "4318:4318"     # OTLP HTTP
       - "9411:9411"     # Zipkin
     volumes:
       - ./platform_components/tempo/tempo.yml:/etc/tempo-config.yml
+    networks:
+      - workshop_network
 
   postgres:
     container_name: postgres_db
@@ -57,3 +65,57 @@ services:
     volumes:
       - ./platform_components/postgres:/docker-entrypoint-initdb.d
       - /opt/postgres:/var/lib/postgresql/data
+    networks:
+      - workshop_network
+
+
+  company-service:
+    container_name: company-service
+    image: company-service:latest
+    ports:
+      - '8085:8085'
+    networks:
+      - workshop_network
+    depends_on:
+      - postgres
+      - prometheus
+      - tempo
+      - loki
+      - grafana
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    hostname: zookeeper
+    container_name: zookeeper-workshop
+    networks:
+      - workshop_network
+    ports:
+      - "2181:2181"
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+
+  broker1:
+    image: confluentinc/cp-kafka:latest
+    hostname: broker1
+    container_name: broker1-workshop
+    networks:
+      - workshop_network
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181'
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT
+      KAFKA_ADVERTISED_LISTENERS: INTERNAL://broker1:29092,EXTERNAL://localhost:9092
+      KAFKA_INTER_BROKER_LISTENER_NAME: INTERNAL
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_ADVERTISED_HOST_NAME: broker1
+
+networks:
+  workshop_network:
+    driver: bridge
+

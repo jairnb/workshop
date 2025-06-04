@@ -2,7 +2,8 @@ build project gradle
 $ ./gradlew clean build && java -jar build/libs/gs-actuator-service-0.1.0.jar
 spring-boot:run
 
-
+Build docker image
+./gradlew bootBuildImage --imageName=company-service
 
 
 

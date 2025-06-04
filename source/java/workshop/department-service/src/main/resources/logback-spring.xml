@@ -32,35 +32,35 @@
 <!--        </rollingPolicy>-->
 <!--    </appender>-->
 
-    	<appender name="LOKI" class="com.github.loki4j.logback.Loki4jAppender">
-    		<batchTimeoutMs>2000</batchTimeoutMs>
-    		<http>
-    			<url>${lokiUri:-http://loki:3100/loki/api/v1/push}</url>
-    		</http>
-    		<format>
-    			<label>
-    				<pattern>application=${appName},hostname=${HOSTNAME},level=%level</pattern>
-    			</label>
-    			<message>
-    				<pattern>${FILE_LOG_PATTERN}</pattern>
-    			</message>
-    			<sortByTime>true</sortByTime>
-    		</format>
-    	</appender>
+<!--    	<appender name="LOKI" class="com.github.loki4j.logback.Loki4jAppender">-->
+<!--    		<batchTimeoutMs>2000</batchTimeoutMs>-->
+<!--    		<http>-->
+<!--    			<url>${lokiUri:-http://loki:3100/loki/api/v1/push}</url>-->
+<!--    		</http>-->
+<!--    		<format>-->
+<!--    			<label>-->
+<!--    				<pattern>application=${appName},hostname=${HOSTNAME},level=%level</pattern>-->
+<!--    			</label>-->
+<!--    			<message>-->
+<!--    				<pattern>${FILE_LOG_PATTERN}</pattern>-->
+<!--    			</message>-->
+<!--    			<sortByTime>true</sortByTime>-->
+<!--    		</format>-->
+<!--    	</appender>-->
 
 
     <!-- LOG everything at INFO level -->
     <root level="info">
 <!--        <appender-ref ref="RollingFile"/>-->
         <appender-ref ref="Console"/>
-        <appender-ref ref="LOKI"/>
+<!--        <appender-ref ref="LOKI"/>-->
     </root>
 
 
-    <logger name="com.workshop.companyservice" level="debug">
+    <logger name="com.workshop.departmentservice" level="debug">
 <!--        <appender-ref ref="RollingFile"/>-->
         <appender-ref ref="Console"/>
-        <appender-ref ref="LOKI"/>
+<!--        <appender-ref ref="LOKI"/>-->
     </logger>
 
 

@@ -1,7 +1,7 @@
 spring:
   application:
-    name: company-service
+    name: department-service
   config:
     import: optional:configserver:${CONFIG_SERVER_URL:http://localhost:8888}
   profiles:
-    active: docker
+    active: local

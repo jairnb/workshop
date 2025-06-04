@@ -9,7 +9,7 @@ spring:
   datasource:
     username: root
     password: password
-    url: ${DATABASE_URL_COMPANY_SERVICE:jdbc:postgresql://localhost:5432/company_service}
+    url: ${DATABASE_URL_COMPANY_SERVICE:jdbc:postgresql://postgres:5432/company_service}
   flyway:
 #    driverClassName: org.postgresql.Driver
 #    url: "jdbc:postgresql://localhost:5432/company-service"
@@ -68,3 +68,6 @@ management:
       enabled: true
     os:
       enabled: true
+  zipkin:
+    tracing:
+      endpoint: http://tempo:9411/api/v2/spans

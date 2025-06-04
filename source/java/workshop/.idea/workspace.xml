@@ -5,20 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="204bccf2-f371-4c6f-83b8-37535a7ea1c3" name="Changes" comment="application properties updated">
-      <change afterPath="$PROJECT_DIR$/authentication-server/src/main/java/com/workshop/authenticationserver/model/MyUserDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-server/src/main/java/com/workshop/authenticationserver/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-server/src/main/java/com/workshop/authenticationserver/security/MyUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-server/src/main/java/com/workshop/authenticationserver/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-server/src/main/resources/application-local.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-server/src/main/resources/migration/V1__Init_schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/src/main/resources/application-docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/department-service/src/main/java/com/workshop/departmentservice/controller/DepartmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/department-service/src/main/java/com/workshop/departmentservice/entity/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/department-service/src/main/java/com/workshop/departmentservice/repository/DepartmentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/department-service/src/main/java/com/workshop/departmentservice/service/DepartmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/department-service/src/main/java/com/workshop/departmentservice/service/DepartmentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/department-service/src/main/resources/application-docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/department-service/src/main/resources/application-local.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/department-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/department-service/src/main/resources/db/migration/V1__Init_schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/department-service/src/main/resources/logback-spring.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/entity/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/entity/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice/entity/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/CompanyServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/com/workshop/companyservice/CompanyServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/aspect/ExceptionControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/com/workshop/companyservice/aspect/ExceptionControllerAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/com/workshop/companyservice/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/controller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/com/workshop/companyservice/controller/CompanyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/dto/AddressDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/com/workshop/companyservice/dto/AddressDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/dto/CompanyDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/com/workshop/companyservice/dto/CompanyDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/dto/CompanyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/com/workshop/companyservice/dto/CompanyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/entity/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/com/workshop/companyservice/entity/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/entity/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/com/workshop/companyservice/entity/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/repository/CompanyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/com/workshop/companyservice/repository/CompanyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/service/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/com/workshop/companyservice/service/CompanyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/service/CompanyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/com/workshop/companyservice/service/CompanyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/resources/application-local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/test/java/org/workshop/companyservice/CompanyServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/test/java/com/workshop/companyservice/CompanyServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/test/java/org/workshop/companyservice/controller/CompanyControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/test/java/com/workshop/companyservice/controller/CompanyControllerIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/test/java/org/workshop/companyservice/controller/CompanyControllerUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/test/java/com/workshop/companyservice/controller/CompanyControllerUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/test/java/org/workshop/companyservice/repository/CompanyRepositoryIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/test/java/com/workshop/companyservice/repository/CompanyRepositoryIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/workshop-ts/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../react/workshop-ts/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,76 +173,80 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Docker.docker-compose.yml.postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build api-gateway-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build company-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build config-server-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build discovery-server-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build employee-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CompanyControllerIntegrationTest.findAll.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CompanyControllerTest.findAll.executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.CompanyControllerUnitTest.findAllResponse.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CompanyControllerUnitTest.shouldCreate.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CompanyControllerUnitTest.shouldDelete.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CompanyControllerUnitTest.shouldFindAllCompanies.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CompanyControllerUnitTest.shouldFindById.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CompanyRepositoryIntegrationTest.connectionCheck.executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.CompanyRepositoryIntegrationTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CompanyRepositoryIntegrationTest.shouldReturnAllCompanies.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CompanyRepositoryIntegrationTest.shouldReturnAllCompanies1.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CompanyRepositoryIntegrationTest.shouldReturnCorrectCompanyName.executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.EmployeeControllerUnitTest.shouldFindAllEmployees.executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.company-service [test].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ApiGatewayServiceApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.CompanyServiceApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ConfigServerServiceApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.DiscoveryServerServiceApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.EmployeeServiceApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.TestEmployeeServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/pedro/Documents/dev/workshop/source/java/workshop/authentication-server/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.docker-compose.yml.postgres: Compose Deployment.executor": "Run",
+    "Gradle.Build api-gateway-service.executor": "Run",
+    "Gradle.Build company-service.executor": "Run",
+    "Gradle.Build config-server-service.executor": "Run",
+    "Gradle.Build department-service.executor": "Run",
+    "Gradle.Build discovery-server-service.executor": "Run",
+    "Gradle.Build employee-service.executor": "Run",
+    "Gradle.CompanyControllerIntegrationTest.findAll.executor": "Run",
+    "Gradle.CompanyControllerTest.findAll.executor": "Debug",
+    "Gradle.CompanyControllerUnitTest.findAllResponse.executor": "Run",
+    "Gradle.CompanyControllerUnitTest.shouldCreate.executor": "Run",
+    "Gradle.CompanyControllerUnitTest.shouldDelete.executor": "Run",
+    "Gradle.CompanyControllerUnitTest.shouldFindAllCompanies.executor": "Run",
+    "Gradle.CompanyControllerUnitTest.shouldFindById.executor": "Run",
+    "Gradle.CompanyRepositoryIntegrationTest.connectionCheck.executor": "Debug",
+    "Gradle.CompanyRepositoryIntegrationTest.executor": "Run",
+    "Gradle.CompanyRepositoryIntegrationTest.shouldReturnAllCompanies.executor": "Run",
+    "Gradle.CompanyRepositoryIntegrationTest.shouldReturnAllCompanies1.executor": "Run",
+    "Gradle.CompanyRepositoryIntegrationTest.shouldReturnCorrectCompanyName.executor": "Debug",
+    "Gradle.EmployeeControllerUnitTest.shouldFindAllEmployees.executor": "Debug",
+    "Gradle.company-service [:org.workshop.companyservice.CompanyServiceApplication.main()].executor": "Debug",
+    "Gradle.company-service [test].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ApiGatewayServiceApplication.executor": "Debug",
+    "Spring Boot.CompanyServiceApplication.executor": "Debug",
+    "Spring Boot.ConfigServerServiceApplication.executor": "Debug",
+    "Spring Boot.DepartmentServiceApplication.executor": "Debug",
+    "Spring Boot.DiscoveryServerServiceApplication.executor": "Debug",
+    "Spring Boot.EmployeeServiceApplication.executor": "Debug",
+    "Spring Boot.TestEmployeeServiceApplication.executor": "Run",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "dev",
+    "jdk.selected.JAVA_MODULE": "openjdk-21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/pedro/Documents/dev/workshop/source/java/workshop/department-service/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/department-service/src/main/resources" />
+      <recent name="$PROJECT_DIR$/department-service/src/main/resources/db/migration" />
+      <recent name="$PROJECT_DIR$/company-service/src/main/resources" />
       <recent name="$PROJECT_DIR$/authentication-server/src/main/resources" />
       <recent name="$PROJECT_DIR$/employee-service/src/main/java/com/workshop/employeeservice" />
-      <recent name="$PROJECT_DIR$/employee-service/src/main/resources/db/migration" />
-      <recent name="$PROJECT_DIR$/employee-service/src/main/resources" />
-      <recent name="$PROJECT_DIR$/workshop-services-configurations" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -278,7 +311,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EmployeeServiceApplication">
+  <component name="RunManager" selected="Spring Boot.DepartmentServiceApplication">
+    <configuration name="CompanyServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.workshop.companyservice.CompanyServiceApplication" />
+      <module name="company-service.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.workshop.companyservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EmployeeControllerUnitTest.shouldFindAllEmployees" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -408,6 +454,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.CompanyServiceApplication" />
       <item itemvalue="Gradle.EmployeeControllerUnitTest.shouldFindAllEmployees" />
       <item itemvalue="Spring Boot.ApiGatewayServiceApplication" />
       <item itemvalue="Spring Boot.AuthenticationServerApplication" />
@@ -426,6 +473,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CompanyServiceApplication" />
         <item itemvalue="Gradle.EmployeeControllerUnitTest.shouldFindAllEmployees" />
       </list>
     </recent_temporary>
@@ -535,6 +583,11 @@
       <workItem from="1734107817890" duration="605000" />
       <workItem from="1734560531998" duration="698000" />
       <workItem from="1734753827082" duration="47000" />
+      <workItem from="1748483035214" duration="881000" />
+      <workItem from="1748710564541" duration="8676000" />
+      <workItem from="1748883434798" duration="3387000" />
+      <workItem from="1748892378118" duration="8851000" />
+      <workItem from="1748962049299" duration="8756000" />
     </task>
     <task id="LOCAL-00001" summary="intellij error">
       <option name="closed" value="true" />
@@ -909,22 +962,22 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/aspect/ExceptionControllerAdvice.java</url>
+          <url>file://$PROJECT_DIR$/company-service/src/main/java/com/workshop/companyservice/aspect/ExceptionControllerAdvice.java</url>
           <line>31</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/aspect/ExceptionControllerAdvice.java</url>
+          <url>file://$PROJECT_DIR$/company-service/src/main/java/com/workshop/companyservice/aspect/ExceptionControllerAdvice.java</url>
           <line>19</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/service/CompanyServiceImpl.java</url>
-          <line>72</line>
+          <url>file://$PROJECT_DIR$/company-service/src/main/java/com/workshop/companyservice/service/CompanyServiceImpl.java</url>
+          <line>74</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/company-service/src/main/java/org/workshop/companyservice/aspect/ExceptionControllerAdvice.java</url>
+          <url>file://$PROJECT_DIR$/company-service/src/main/java/com/workshop/companyservice/aspect/ExceptionControllerAdvice.java</url>
           <line>25</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
